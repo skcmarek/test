@@ -21,6 +21,7 @@ Inštalácia WSL
 
 3. Potvrdiť inštaláciu a nastaviť meno a heslo
 
+
 4. WSL nepodporuje defaultne GUI aplikácie, no ich obraz sa dá exportovať na XServer:
 	* nainštalovať Xlaunch (alebo iný)
 	* v nastaveniach nastaviť port výstupného displeja
@@ -52,6 +53,7 @@ Inštalácia projektu
 	sudo add-apt-repository ppa:beineri/opt-qt591-xenial
 	sudo apt-get update
 	sudo apt-get install qt59-meta-full
+
 
 3. Pre správne fungovanie je potrebné nastaviť flag pre spustiteľnosť knižníc Qt príkazom:
 	* sudo execstack -c /opt/qt59/lib/*
