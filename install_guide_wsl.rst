@@ -5,7 +5,7 @@ Install guide pre Windows Subsystem for Linux (WSL)
 Inštalácia WSL
 --------------
 
-.. note::  Inštálacia WSL je možná len pre 64-bitovú verziu Windows 10 a build 1607+
+.. note::  Inštálácia WSL je možná len pre 64-bitovú verziu Windows 10 a build 1607+
 
 1.  Spustiť **PowerShell** ako **administrátor** a spustiť nasledujúci príkaz:
 
