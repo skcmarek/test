@@ -21,7 +21,7 @@ Inštalácia WSL
 
 3. Potvrdiť inštaláciu a nastaviť meno a heslo
 
-5. WSL nepodporuje defaultne GUI aplikácie, no ich obraz sa dá exportovať na XServer:
+4. WSL nepodporuje defaultne GUI aplikácie, no ich obraz sa dá exportovať na XServer:
 	* nainštalovať Xlaunch (alebo iný)
 	* v nastaveniach nastaviť port výstupného displeja
 	* v terminály zadať export DISPLAY=:*port* (ten ktorý sme nastavili v Xlaunch)
