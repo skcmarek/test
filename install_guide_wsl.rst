@@ -44,7 +44,7 @@ Inštalácia projektu
     	* freeglut3-dev
 
 	* **CMake** `3.5.0 <https://cmake.org/files/v3.5/cmake-3.5.0.tar.gz>`_
-    	* inštalovať zo source files, nie Synaptic
+    		* inštalovať zo source files, nie Synaptic
 
 2. Nainštalovať Qt5 cez ppa (cez Synaptic je dostupná len verzia 4):
 
