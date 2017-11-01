@@ -70,23 +70,24 @@ Inštalácia projektu
 
 	* Otvoriť QtCreator príkazom: 
 
-  :: 
+  	:: 
 
   		sudo /./opt/qt59/bin/qtcreator
+
 
 	* File >> Open file or project >> Otvoriť CmakeList.txt v zložke 3dsoftviz
 	* Vytvoriť projekt
 		* Ak úspešne (dá sa kliknúť na FINISH) >> Kliknúť FINISH
-		* Ak neúspešne  Nájsť chybu vo výpise
+		* Ak neúspešne – Nájsť chybu vo výpise
       
 7. Nastaviť build v QtCreator-i
 
 	Projects >> Build and Run >> Build
-	Build Settings >> Add >> Clone Selected >> pomenovať unity - automaticky prepne na unity build mode
+	Build Settings >> Add >> Clone Selected >> pomenovať “unity” - automaticky prepne na unity build mode
 	Build Steps >> Details >> zaškrtnúť install_unity
 	
 	Nastavenie počtu jadier na buildovanie projektu...
-	Details >> Additional arguments -jN, kde N reprezentuje počet VIRTUÁLNYCH jadier
+	Details >> Additional arguments “-jN”, kde N reprezentuje počet VIRTUÁLNYCH jadier
 
 8. V Tools >> Options >> Build & Run >> QtVersions je potrebné cez *Add* pridať /opt/qt59/bin/qmake
 9. V Tools >> Options >> Build & Run >> Kits je potrebné nastaviť verziu Qt5.9..
@@ -99,4 +100,3 @@ Inštalácia projektu
 	Working directory: {project_dir}/_install/bin
 
 12. Spustiť projekt
-
