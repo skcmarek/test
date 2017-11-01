@@ -16,6 +16,7 @@ Inštalácia WSL
 2. Spustiť **CMD** a spustiť: 
    
 ::
+	
 	bash
 
 3. Potvrdiť inštaláciu a nastaviť meno a heslo
@@ -32,12 +33,12 @@ Inštalácia projektu
 
 1. Nainštalovať prostredníctvom Synaptic nasledujúce programy
 
-  * **Git** - git
-  * **OpenSceneGraph** - libopenscenegraph-dev
-  * **Boost** - libboost-all-dev
-  * **Lua** - liblua5.1-0-dev
-  * **OpenCV** - libopencv-dev
-  * **FreeGlut3**
+	* **Git** - git
+	* **OpenSceneGraph** - libopenscenegraph-dev
+	* **Boost** - libboost-all-dev
+	* **Lua** - liblua5.1-0-dev
+	* **OpenCV** - libopencv-dev
+	* **FreeGlut3**
 
     * freeglut3
     * freeglut3-dev
