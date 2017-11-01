@@ -79,7 +79,7 @@ Inštalácia projektu
   		sudo /./opt/qt59/bin/qtcreator
 
 
-	* File >> Open file or project >> Otvoriť CmakeList.txt v zložke 3dsoftviz
+	* V QtCreator File >> Open file or project >> Otvoriť CmakeList.txt v zložke 3dsoftviz
 	* Vytvoriť projekt
 		* Ak úspešne (dá sa kliknúť na FINISH) >> Kliknúť FINISH
 		* Ak neúspešne – Nájsť chybu vo výpise
