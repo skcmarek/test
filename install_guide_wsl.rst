@@ -39,13 +39,11 @@ Inštalácia projektu
 	* **Lua** - liblua5.1-0-dev
 	* **OpenCV** - libopencv-dev
 	* **FreeGlut3**
+    	* freeglut3
+    	* freeglut3-dev
 
-    * freeglut3
-    * freeglut3-dev
-
-  * **CMake** `3.5.0 <https://cmake.org/files/v3.5/cmake-3.5.0.tar.gz>`_
-
-    * inštalovať zo source files, nie Synaptic
+	* **CMake** `3.5.0 <https://cmake.org/files/v3.5/cmake-3.5.0.tar.gz>`_
+    	* inštalovať zo source files, nie Synaptic
 
 2. Nainštalovať Qt5 cez ppa (cez Synaptic je dostupná len verzia 4):
 
@@ -56,8 +54,8 @@ Inštalácia projektu
 	sudo apt-get install qt59-meta-full
 
 3. Pre správne fungovanie je potrebné nastaviť flag pre spustiteľnosť knižníc Qt príkazom:
- 	* sudo execstack -c /opt/qt59/lib/*
- 	* v súčasnej verzii execstack nie je dostupný, treba ho najskôr nainštalovať
+	* sudo execstack -c /opt/qt59/lib/*
+	* v súčasnej verzii execstack nie je dostupný, treba ho najskôr nainštalovať
 
 4. Klonovať cez Git projekt 3dsoftvizQt
 
@@ -65,22 +63,21 @@ Inštalácia projektu
 	* git submodule update --init --recursive
 
 5. Prepnúť sa do aktuálnej vetvy: 
-    * git checkout *vetva*
-    * git submodule update --init --recursive
+	* git checkout *vetva*
+	* git submodule update --init --recursive
 
 6. Zbuildovanie projektu
 
-  * Otvoriť QtCreator príkazom: 
+	* Otvoriť QtCreator príkazom: 
 
   :: 
 
   		sudo /./opt/qt59/bin/qtcreator
 
-  * File >> Open file or project >> Otvoriť CmakeList.txt v zložke 3dsoftviz
-  * Vytvoriť projekt
-
-    * Ak úspešne (dá sa kliknúť na FINISH) >> Kliknúť FINISH
-    * Ak neúspešne  Nájsť chybu vo výpise
+	* File >> Open file or project >> Otvoriť CmakeList.txt v zložke 3dsoftviz
+	* Vytvoriť projekt
+		* Ak úspešne (dá sa kliknúť na FINISH) >> Kliknúť FINISH
+		* Ak neúspešne  Nájsť chybu vo výpise
       
 7. Nastaviť build v QtCreator-i
 
