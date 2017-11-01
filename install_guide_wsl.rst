@@ -21,8 +21,8 @@ Inštalácia WSL
 
 3. Potvrdiť inštaláciu a nastaviť meno a heslo
 
-
 4. WSL nepodporuje defaultne GUI aplikácie, no ich obraz sa dá exportovať na XServer:
+
 	* nainštalovať Xlaunch (alebo iný)
 	* v nastaveniach nastaviť port výstupného displeja
 	* v terminály zadať export DISPLAY=:*port* (ten ktorý sme nastavili v Xlaunch)
@@ -56,6 +56,7 @@ Inštalácia projektu
 
 
 3. Pre správne fungovanie je potrebné nastaviť flag pre spustiteľnosť knižníc Qt príkazom:
+
 	* sudo execstack -c /opt/qt59/lib/*
 	* v súčasnej verzii execstack nie je dostupný, treba ho najskôr nainštalovať
 
@@ -65,6 +66,7 @@ Inštalácia projektu
 	* git submodule update --init --recursive
 
 5. Prepnúť sa do aktuálnej vetvy: 
+
 	* git checkout *vetva*
 	* git submodule update --init --recursive
 
