@@ -62,7 +62,7 @@ od hlavnej kamery. Slave kamery sú posunuté do jedného a druhého smeru,
 aby sa neprekrývali. Ilustrácia výslednej zostavy kamier je znázornená
 na tomto obrázku (pre 3 kamery):
 
-|image0|
+
 
 Manipulácia s grafom v priestore cez Leap senzor
 ================================================
@@ -114,8 +114,6 @@ Rozšírená funkcionalita aplikácie vďaka zakomponovaniu Leap senzora:
    používateľ hýbe rukou, graf sa hýbe v scéne po všetkých troch
    súradniciach na základe zmeny polohy ruky.
 
-3D Vizualizovanie grafu
-=======================
 
 Uloženie a načítanie dát z databázy
 ===================================
