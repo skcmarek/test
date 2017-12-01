@@ -1,5 +1,21 @@
+
+.. contents::
+
+
 Úvod
 ====
+
+Motivácia
+---------
+Človek je v dnešnej dobe zahltený čoraz väčším množstvom informácií a je pre neho obtiažne si dané informácie zapamätať. Z nedávnych poznatkov je zrejmé, že vizualizácia informácií nám pomáha si ich ľahšie zapamätať Je to spôsobené zapojením oboch hemisfér mozgu narozdiel od zapojenia iba ľavej hemisféry pri spracovaní informácií vo forme čísel alebo písaného textu.
+
+Ďalším dôležitým faktom je charakter dnešných dát. Tie bývajú často multidimenzionálne, pričom pod dimenziou chápeme počet atribútov, ktoré majú jednotlivé položky datasetu. Často nás zaujímajú iba niektoré dimenzie a tie ostatné vnímame ako šum, ktorý nám sťažuje vnímanie vlastností a vzťahov v datasete. Neprehľadnosť môže byť tiež umocnená veľkosťou analyzovaných dát. V takom prípade tiež výrazne pomôže vizualizácia dát vo forme grafu. Tá nám umožní vnímať vzťahy či vzory, ktoré predtým neboli viditeľné.
+
+Ciele
+-----
+3DSoftviz je už niekoľko rokov vyvíjaný softvér na Fakulte informatiky a informačných technológií STU. Na začiatku bol vytvorený s úmyslom stať sa general-purpose nástrojom na vizualizáciu informácií pomocou grafových štruktúr. Neskôr sa zameral na vizualizáciu softvéru. Napriek neskoršiemu vymedzeniu sa je ho ale po pomerne malých modifikáciách možné prispôsobiť na vizualizáciu informácii aj z iných oblastí.
+
+Aktuálne sa využíva na vizualizáciu statických aspektov softvéru vo forme orientovaných či neorientovaých grafov. Datasety s informáciami o uzloch a hranách dokáže načítať z XML súboru, databázy či git repozitára. Okrem iného je tiež možné pridávanie uzlov či hrán, viacero možností rozmiestnenia uzlov grafu, manipulácia s grafom pomocou myši, zhlukovanie uzlov či vizualizácia evolúcie softvéru - zmien softvéru v čase zachytených v trojrozmernom priestore.
 
 
 Architektúra systému 
@@ -67,8 +83,6 @@ Aruco.
 
 Prípady použitia
 ================
-
-.. contents::
 
 Zobrazenie cez stereoskopické okuliare
 --------------------------------------
