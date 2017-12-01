@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Migrácia na MSVC2013 &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Pre vývojárov</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Migrácia na MSVC2013</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/migracia-msvc2013.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="migracia-na-msvc2013">
+<h1>Migrácia na MSVC2013<a class="headerlink" href="#migracia-na-msvc2013" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><ol class="arabic simple">
+<li><strong>Nainštalujte si Microsoft Visual Studio 2013 (x86)</strong></li>
+</ol>
+</div></blockquote>
+<p>Môžete použiť verziu z&nbsp;<a class="reference external" href="https://www.dreamspark.com/">MS DreamSpark</a>. Testované na MS Visual Studio Ultimate 2013 a&nbsp;MS Visual Studio Pro 2013 bez updatov.</p>
+<blockquote>
+<div><blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Nie Visual Studio Express!</p>
+</div>
+</div></blockquote>
+<ol class="arabic" start="2">
+<li><p class="first"><strong>Zálohujte staré súbory</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>OpenSceneGraph</li>
+<li>Qt (v ktorom sa má nachádzať aj váš QtCreator)</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Umiestnite nové súbory namiesto starých (nič neprepisujte)</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://drive.google.com/file/d/0B54yBSwttuiDblhwNWZqTW9ORVk/view?usp=sharing">OpenSceneGraph - 3.4.0 vc12 custom build</a></li>
+<li><a class="reference external" href="https://drive.google.com/file/d/0B54yBSwttuiDNmtPbmxFQmcyTEk/view?usp=sharing">Qt – 4.8.6 vc12 custom build</a></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>QtCreator</strong></p>
+</li>
+</ol>
+</div></blockquote>
+<p>Väčšina z&nbsp;nás má QtCreator umiestnený v&nbsp;priečinku Qt, ak si prajete naďalej používať váš QtCreator, tak si&nbsp;ho presuňte zo&nbsp;zálohovaného priečinku starého Qt do nového Qt.</p>
+<p>Alternatívne sa už nachádza jeden QtCreator (3.6.0) v&nbsp;novom priečinku Qt, tak môžete používať ten, alebo ho môžete zmazať. Spustiteľný súbor sa nachádza v:</p>
+<blockquote>
+<div><blockquote>
+<div>/Qt/Qtcreator-3.6.0/Tools/QtCreator/bin/qtcreator.exe</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><strong>Rapid EE</strong></li>
+</ol>
+</div></blockquote>
+<p>V&nbsp;Rapid EE zmeňte nasledujúce:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">PATH</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>%OSG_DIR%ThirdPartyVC10x86bin</em></li>
+<li><em>%OSG_DIR%ThirdPartyVC12x86bin</em></li>
+<li><em>%OPENCV_DIR%buildx86vc10bin</em></li>
+<li><em>%OPENCV_DIR%buildx86vc12bin</em></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">CMAKE_INCLUDE_PATH</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>%OSG_DIR%ThirdPartyVC10x86include</em></li>
+<li><em>%OSG_DIR%ThirdPartyVC12x86include</em></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">CMAKE_LIBRARY_PATH</p>
+<blockquote>
+<div><ul class="simple">
+<li><em>%OSG_DIR%ThirdPartyVC10x86lib</em></li>
+<li><em>%OSG_DIR%ThirdPartyVC12x86lib</em></li>
+<li><em>%OPENCV_DIR%buildx86vc10lib</em></li>
+<li><em>%OPENCV_DIR%buildx86vc12lib</em></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Ak používate iný QtCreator, nezabudnite zmeniť cestu v&nbsp;PATH napr. na:</p>
+<blockquote>
+<div><blockquote>
+<div><ul class="simple">
+<li><em>%QT_DIR%Qtcreatorbin</em></li>
+<li><em>%QT_DIR%Qtcreator-3.6.0ToolsQtCreatorbin</em></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><strong>QtCreator</strong></li>
+</ol>
+<ul class="simple">
+<li>Otvorte Tools(Menu) &gt; Options…</li>
+<li>Prejdite na ľavú kartu Build &amp; Run</li>
+</ul>
+</div></blockquote>
+<p>Karta QtVersions</p>
+<blockquote>
+<div><ul class="simple">
+<li>Skontrolujte, či nenastali problémy s&nbsp;rozoznaním Qt</li>
+<li>Qt verzia by mala byť 4.8.6</li>
+</ul>
+</div></blockquote>
+<p>Karta Compilers</p>
+<blockquote>
+<div><ul class="simple">
+<li>Skontrolujte či sa v&nbsp;zozname nachádza Microsoft Visual C++ Compiler 12.0 (x86)</li>
+</ul>
+</div></blockquote>
+<p>Karta Kits</p>
+<blockquote>
+<div><ul class="simple">
+<li>V&nbsp;predvolenom profile si zvoľte pre Compiler: Microsoft Visual C++ Compiler 12.0 (x86)</li>
+</ul>
+</div></blockquote>
+<p><em>Príklad:</em></p>
+<p><img alt="100000000000034F0000025165206D41_png" src="_images/100000000000034F0000025165206D41.png" /></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,445 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sphinx dokumentacia &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Metodiky" href="methodology.html"/>
+        <link rel="next" title="TFS metodika" href="tfs.html"/>
+        <link rel="prev" title="Gitflow metodika" href="gitflow.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Akceptačné testovanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logbenchlib.html">Logovacie a benchmarkingové knižnice</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="methodology.html">Metodiky</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cpp-howto.html">Ako programovat v C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cppcheck.html">CppCheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpplint.html">Cpplint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codereview.html">CodeReview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astyle.html">AStyle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plantuml.html">Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gitflow.html">Gitflow metodika</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sphinx dokumentacia</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instalacia">Instalacia</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#html-dokumentacia">HTML dokumentacia</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pdf-dokumentacia">PDF dokumentacia</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#plantuml">PlantUML</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#excel-tabulky">Excel tabulky</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tfs.html">TFS metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.html">Logovanie s knižnicou Easylogging++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="igloo.html">Metodika na písanie BDD testov</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+          <li><a href="methodology.html">Metodiky</a> &raquo;</li>
+        
+      <li>Sphinx dokumentacia</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/sphinx.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx-dokumentacia">
+<h1>Sphinx dokumentacia<a class="headerlink" href="#sphinx-dokumentacia" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="instalacia">
+<h2>Instalacia<a class="headerlink" href="#instalacia" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Pre pracu so Sphinxom treba mat nainstalovany <a class="reference external" href="https://www.python.org/">Python</a>.</li>
+</ul>
+<img alt="_images/python.png" src="_images/python.png" />
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Python ponuka verzie 2.x a 3.x. Sphinx 1.3 moze bezat pod Python 2.6, 2.7, 3.3, 3.4, ale odporucana verzia je 2.7.</p>
+</div>
+<ul>
+<li><p class="first">Pre stahnutie a instalovanie externych kniznic pre Python existuje prikaz <em>pip</em>. Prikaz uz sa nachadza v oficialnych verziach Pythonu 3.4.0 alebo 2.7.9.</p>
+<blockquote>
+<div><p>Ak prikaz sa nenainstaloval automaticky, treba ho stiahnut zo stranky <a class="reference external" href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a> a niekam ulozit. V prikazovom riadku treba prejst do adresara s <em>get-pip.py</em> a spustit nasledovny prikaz:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">get</span><span class="o">-</span><span class="n">pip</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="sphinx">
+<h3>Sphinx<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Prejst do priecinku s dokumentaciou (tam kde index.rst sa nachadza) a pomocou prikazu pip nainstalovat Sphinx:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>(<a class="reference external" href="http://www.sphinx-doc.org/en/stable/install.html">sphinx-doc.org</a>)</li>
+</ul>
+</li>
+<li><p class="first">Ak treba vytvorit novu dokumentaciu, pre nastavenie zdrojoveho adresara a vytvorenie potrebnych suborov na pracu so Sphinx treba spustit prikaz</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="o">-</span><span class="n">quickstart</span>
+</pre></div>
+</div>
+<p>a odpovedat na otazky. Vyberte si vsetky predvolene odpovede a po vyzve zadajte nazov, autorov a verziu projektu.</p>
+</li>
+<li><p class="first">Tymto prikazom budu vygenerovane subory <em>Makefile</em>, <em>make.bat</em> a <em>conf.py.in</em>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Vsetky konfiguracie dokumentacie su v <em>conf.py.in</em>.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last"><em>Sphinx-quickstart</em> a vytvaranie tychto suborov generuju novu dokumentaciu! Ak subory <em>index.rst</em>, <em>Makefile</em>, <em>make.bat</em> a <em>conf.py.in</em> uz existovali, tak sa prepisu!</p>
+</div>
+<ul class="simple">
+<li>Sphinx dokumentacia generuje vystup v roznych formatoch zo suborov .rst. Podrobnejsie o <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">RestructuredText</a>.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="html-dokumentacia">
+<h2>HTML dokumentacia<a class="headerlink" href="#html-dokumentacia" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Subor <em>make.bat</em> povoli vygenerovat dokumentaciu v tom formate, ktory potrebujete</p>
+</li>
+<li><p class="first">Pre generovanie HTML dokumentacie treba v prikazovom riadku prejst do priecinku s ReST subormi a make.bat suborom a spustit prikaz</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Inak generovanie dokumentacie sa da spustit pomocou CMake v QtCreatore</p>
+</li>
+</ul>
+</div>
+<div class="section" id="pdf-dokumentacia">
+<h2>PDF dokumentacia<a class="headerlink" href="#pdf-dokumentacia" title="Permalink to this headline">¶</a></h2>
+<p>Pre generovanie PDF dokumentacie potrebujeme najprv vytvorit Latex dokumentaciu.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pre pracu s Latex treba mat <a class="reference external" href="https://www.tug.org/texlive/">TeXlive</a></p>
+</div>
+<p>Prikazom</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">latex</span>
+</pre></div>
+</div>
+<p>vygeneruje sa Latex dokumentacia, ktora nasledne sa moze konvertovat do PDF pomocou programu <a class="reference external" href="http://www.texstudio.org/">TeXstudio</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">PDF dokumentacia generuje len pomocou prikazoveho riadku a externeho programu, neda sa spustat cez CMake!</p>
+</div>
+</div>
+<div class="section" id="plantuml">
+<h2>PlantUML<a class="headerlink" href="#plantuml" title="Permalink to this headline">¶</a></h2>
+<p>Pre pracu s PlantUML nastrojmi v Sphinx treba:</p>
+<ul>
+<li><p class="first">nainstalovat <a class="reference external" href="https://java.com/en/download/">Javu</a></p>
+</li>
+<li><p class="first">pridat Javu do premennych prostredi (environment variable)</p>
+</li>
+<li><p class="first">nainstalovat <a class="reference external" href="http://www.graphviz.org/pub/graphviz/stable/windows/">Graphviz</a></p>
+<ul class="simple">
+<li>odporucana verzia je 2.28</li>
+</ul>
+</li>
+<li><p class="first">pridat Graphviz do premennych</p>
+<img alt="_images/graphviz_dot.jpg" src="_images/graphviz_dot.jpg" />
+</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Hodnota premennej ma byt do <em>dot.exe</em></p>
+</div>
+<ul>
+<li><p class="first">pridat Graphviz do extensions v conf.py.in:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinx.ext.graphviz&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">nainstalovat <em>sphinxcontrib-plantuml</em> zo <a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-plantuml">stranky</a> alebo prikazom</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">plantuml</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">pridat pantuml do extensions v conf.py.in:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.plantuml&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">stiahnut <a class="reference external" href="http://plantuml.com/download.html">plantuml.jar</a></p>
+</li>
+<li><p class="first">pridat do conf.py.in prikaz</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">plantuml</span> <span class="o">=</span> <span class="s1">&#39;java -jar cesta/do/plantuml.jar&#39;</span>
+</pre></div>
+</div>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">Dolezite je zmenit tuto cestu na spravnu, aku mate aktualnu na Vasom pocitaci!</p>
+</div>
+</li>
+<li><p class="first">pridavat UML do dokumentacii je mozne pomocou</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>.. uml::
+
+            !include /cesta/do/subor.wsd(txt)
+
+            alebo
+
+            @startuml
+            PlantUML kod
+            @enduml
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="excel-tabulky">
+<h2>Excel tabulky<a class="headerlink" href="#excel-tabulky" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Pre import Excel suborov do dokumentacie treba nainstalovat <em>exceltable</em> pomocou prikazu</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinxcontrib</span><span class="o">-</span><span class="n">exceltable</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Pridat <em>exceltable</em> do extensions v <em>conf.py.in</em>:</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;sphinxcontrib.exceltable&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Importovat tabulky pridanim do .rst suboru:</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">exceltable</span><span class="p">::</span> <span class="n">caption</span>
+  <span class="p">:</span><span class="n">file</span><span class="p">:</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">document</span><span class="o">.</span><span class="n">xls</span>
+  <span class="p">:</span><span class="n">header</span><span class="p">:</span> <span class="mi">1</span>
+  <span class="p">:</span><span class="n">selection</span><span class="p">:</span> <span class="n">A1</span><span class="p">:</span><span class="n">B2</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Podrobnejsie o <a class="reference external" href="https://pythonhosted.org/sphinxcontrib-exceltable/#option">Options</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tfs.html" class="btn btn-neutral float-right" title="TFS metodika" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gitflow.html" class="btn btn-neutral" title="Gitflow metodika" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

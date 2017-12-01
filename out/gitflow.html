@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Gitflow metodika &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Metodiky" href="methodology.html"/>
+        <link rel="next" title="Sphinx dokumentacia" href="sphinx.html"/>
+        <link rel="prev" title="Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML" href="plantuml.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Akceptačné testovanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logbenchlib.html">Logovacie a benchmarkingové knižnice</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="methodology.html">Metodiky</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cpp-howto.html">Ako programovat v C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cppcheck.html">CppCheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpplint.html">Cpplint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codereview.html">CodeReview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astyle.html">AStyle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plantuml.html">Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Gitflow metodika</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#forkovanie-na-github-e">Forkovanie na GitHub-e</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#vetvy">Vetvy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pull-requesty">Pull requesty</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#commit-messages">Commit messages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#useful-commands">Useful commands</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sphinx.html">Sphinx dokumentacia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tfs.html">TFS metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.html">Logovanie s knižnicou Easylogging++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="igloo.html">Metodika na písanie BDD testov</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+          <li><a href="methodology.html">Metodiky</a> &raquo;</li>
+        
+      <li>Gitflow metodika</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/gitflow.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="gitflow-metodika">
+<h1>Gitflow metodika<a class="headerlink" href="#gitflow-metodika" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="forkovanie-na-github-e">
+<h2>Forkovanie na GitHub-e<a class="headerlink" href="#forkovanie-na-github-e" title="Permalink to this headline">¶</a></h2>
+<p>Fork na GitHub-e neprenesie tag-y do forknuteho repozitara, treba ich rucne preniest,
+v novom repozitari:</p>
+<blockquote>
+<div><ul class="simple">
+<li>git remote add povodny-repozitar <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:povodny-repozitar/nazov_repo.git</li>
+<li>git fetch povodny-repozitar ‘refs/tags/<em>:refs/tags/</em>’</li>
+<li>git push –tags</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="vetvy">
+<h2>Vetvy<a class="headerlink" href="#vetvy" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul>
+<li><p class="first">Master - hlavny projekt</p>
+</li>
+<li><dl class="first docutils">
+<dt>Develop - branchnuta z mastra, kazdy sprint ma vlastnu Develop vetvu, na konci sprintu sa mergne spat do mastra,</dt>
+<dd><p class="first last"><strong>!!! pred mergom treba spravit komplet build (nie len unity)</strong></p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Feature - branchnuta z developu, kazdy novy kus funkcionality (task v issue tracking nastroji), ktory sa kodi musi mat vlastnu</p>
+<blockquote>
+<div><ul class="simple">
+<li>Feature vetvu… po dokonceni a validaci kodu sa mergne spat do Developu, NEINTERAGUJE S MASTER VETVOU</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Hotfix - vetva na rychly fix priamo z mastera, merguje sa do mastera AJ developu, navysuje aktualnu verziu</p>
+</li>
+</ul>
+</div></blockquote>
+<p>Vzdy mergujeme cez Shell a s prepinacom <strong>–no-ff</strong></p>
+<p>Cheat sheet so vsetkymi zakladnymi commandmi:
+<a class="reference external" href="https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf">https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf</a></p>
+</div>
+<div class="section" id="pull-requesty">
+<h2>Pull requesty<a class="headerlink" href="#pull-requesty" title="Permalink to this headline">¶</a></h2>
+<p>Po dokonceni prace, ked sme ready to review sa dava pull request na vetvu, do ktorej sa bude mergovat.</p>
+<p>Pull request sa robi z GUI GitHubu (pravy horny roh), alebo $ git request-pull {meno_commitu} {URL}
+(doporucujem robit cez GUI)</p>
+<p>Po odsuhlaseni Pull requestu sa potom pristupi k mergu.</p>
+<blockquote>
+<div><img alt="_images/branching.png" src="_images/branching.png" />
+</div></blockquote>
+<p>Obrazok ilustruje vytvorenie feature branch z develop vetvy, implementaciu rozdelenu do znazornenych commitov, nasledny pull request predstavujuci
+ziadost o code review a finalny merge do develop vetvy daneho sprintu.</p>
+</div>
+<div class="section" id="commit-messages">
+<h2>Commit messages<a class="headerlink" href="#commit-messages" title="Permalink to this headline">¶</a></h2>
+<p>v Commit messages pouzivame tagy a ID ulohy na zaciatok:</p>
+<ul class="simple">
+<li>[FIX] - fixli sme nejaku chybu z minula, bugfix, hotfix a podobne</li>
+<li>[ADD] - pridali sme novu funkcionalitu, subor, …</li>
+<li>[DOC] - pridali sme dokumentaciu, komenty…</li>
+<li>[REF] - pre refactoring</li>
+<li>[FMT] - formatovanie textu, uprava</li>
+<li>[TEST] - pre testy</li>
+<li>[BUILD] - aktualizacia CMake build systemu, modulov</li>
+</ul>
+<p>Za tym velmi strucne (a vystizne) opiseme, ake zmeny sme spravili. Message by mali byt kratke, no pokryvat vsetko, co sme v commite spravili.
+<strong>!!! vseobecny tvar: “[tag] #taskId Popis vykonanej zmeny”</strong>
+Napr. <em>[DOC] #3654 Pridanie uvadzania ID ulohy do gitflow metodiky</em></p>
+</div>
+<div class="section" id="useful-commands">
+<h2>Useful commands<a class="headerlink" href="#useful-commands" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="first docutils">
+<dt>$ git submodule update –init –recursive</dt>
+<dd><ul class="first last">
+<li>update submodulov (dependencies)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>$ git checkout -f meno_branch</dt>
+<dd><ul class="first last">
+<li>checkout branche aj napriek lokalnym zmenam, budu zahodene</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>$ git status</dt>
+<dd><ul class="first last">
+<li>vypise vsetky vykonane zmeny</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>$ git stash / $ git stash pop</dt>
+<dd><ul class="first last">
+<li>ulozi stav projektu do stashu, z ktoreho sa da potom tento stav pop-nut, dobre na prenos zmien medzi vetvami</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<div class="section" id="tvorba-feature-branch-u">
+<h3>Tvorba feature branch-u:<a class="headerlink" href="#tvorba-feature-branch-u" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>$ git checkout -b “feature/meno-feature” develop     //Switched to a new branch “feature/meno-feature”</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="mergovanie-hotoveho-feature">
+<h3>Mergovanie hotoveho feature:<a class="headerlink" href="#mergovanie-hotoveho-feature" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>$ git checkout develop                                       //Switched to branch ‘develop’</li>
+<li>$ git merge –no-ff meno-feature</li>
+<li>$ git push origin develop</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="tvorba-hotfix-branch-u">
+<h3>Tvorba hotfix branch-u:<a class="headerlink" href="#tvorba-hotfix-branch-u" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>$ git checkout -b “hotfix/nazov-co-fixujem” master   //Switched to a new branch “hotfix-{cislo_verzie}”</li>
+<li>$ git commit -m “sprava, co som spravil”</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="uzatvorenie-hotfix-branchu">
+<h3>Uzatvorenie Hotfix branchu:<a class="headerlink" href="#uzatvorenie-hotfix-branchu" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>$ git checkout develop                                       //Switched to branch ‘develop’</li>
+<li>$ git merge –no-ff “hotfix/nazov-co-fixujem”</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="sphinx.html" class="btn btn-neutral float-right" title="Sphinx dokumentacia" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="plantuml.html" class="btn btn-neutral" title="Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

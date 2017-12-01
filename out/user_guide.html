@@ -1,0 +1,946 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Používateľská príručka pre 3D Softviz &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre používateľov" href="users.html"/>
+        <link rel="next" title="Používateľská príručka pre Vuzix a Leap" href="vuzix_leap.html"/>
+        <link rel="prev" title="Inštalačný návod (VC10)" href="install_guide_vc10.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="users.html">Pre používateľov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html">Big picture a sumarizácia features nástroja 3DSoftviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#uvod">Úvod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#architektura-systemu">Architektúra systému</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#pripady-pouzitia">Prípady použitia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc12.html">Inštalačný návod (VC12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_linux.html">Návod pre Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_macos.html">Install guide pre macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_wsl.html">Install guide pre Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc10.html">Inštalačný návod (VC10)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Používateľská príručka pre 3D Softviz</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ovladacie-prvky">Ovládacie prvky</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-graph">Záložka GRAPH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-constraints">Záložka CONSTRAINTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-clustering">Záložka CLUSTERING</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-connections">Záložka CONNECTIONS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-evolution">Záložka EVOLUTION</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-more-features">Záložka MORE FEATURES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hlavne-okno">Hlavné okno</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#git-repozitar">Git repozitár</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vuzix_leap.html">Používateľská príručka pre Vuzix a Leap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Pre vývojárov</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="users.html">Pre používateľov</a> &raquo;</li>
+        
+      <li>Používateľská príručka pre 3D Softviz</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/user_guide.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pouzivatelska-prirucka-pre-3d-softviz">
+<h1>Používateľská príručka pre 3D Softviz<a class="headerlink" href="#pouzivatelska-prirucka-pre-3d-softviz" title="Permalink to this headline">¶</a></h1>
+<p><strong>Okno s aplikáciou je rozdelené na tri základné časti:</strong></p>
+<ul>
+<li><p class="first">menu</p>
+<blockquote>
+<div><ul class="simple">
+<li>&nbsp;File – načítanie grafu zo súboru, z&nbsp;databázy, uloženie grafu, uloženie layoutu, ukončenie aplikácie</li>
+<li>&nbsp;Settings – nastavenia aplikácie; konfiguračný súbor používa bodkovú notáciu, ktorá umožňuje identifikovať význam konfiguračnej premennej</li>
+<li>&nbsp;Help</li>
+<li>Test - pušťa základné grafy pre rýchle testovanie (100-uzlový, 500-uzlový, Veolia, Lua Graph, Module Graph)</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">hlavné okno - zobrazuje graf a&nbsp;umožňuje s ním používateľovi interagovať</p>
+</li>
+<li><p class="first">ovládací panel – nástroje pre prácu s grafom</p>
+</li>
+</ul>
+<div class="section" id="ovladacie-prvky">
+<h2>Ovládacie prvky<a class="headerlink" href="#ovladacie-prvky" title="Permalink to this headline">¶</a></h2>
+<p><strong>Ovládanie kamery:</strong></p>
+<ul class="simple">
+<li>Vyber prvkov grafu - ľavé tlačidlo myši + pohyb myšou</li>
+<li>Otáčanie kamery okolo grafu - pravé tlačidlo myši + pohyb myšou</li>
+<li>Ovládanie priblíženia obrazovky - koliesko na myši</li>
+<li>Ovládanie pomocou klávesnici:<ul>
+<li>Hore - PgUp</li>
+<li>Dole - PgDn</li>
+<li>Vľavo - šípka vľavo</li>
+<li>Vpravo - šípka vpravo</li>
+<li>Dopredu - šípka hore</li>
+<li>Dozadu - šípka dole</li>
+</ul>
+</li>
+</ul>
+<p>Inicializácia automatického pohybu začne po stlačení kláves Alt + Shift a kliknutím myši na zvolenú hranu, či uzol. V závislosti od nastavenia aplikácie sú pred inicializovaním pohybu ešte automaticky vybrané body záujmu. Pokiaľ je automatický výber uzlov vypnutý, body záujmu je možné zvoliť manuálne myšou alebo stlačením klávesy Q (pre náhodný výber uzlov alebo pre výber uzlov pomocou metrík). Automatické použitie metrík je možné vypnúť v nastavení aplikácie pomocou parametra „Viewer.PickHandler.SelectInterestPoints“ nastaveného na hodnotu 1.</p>
+<p><strong>Iné ovládacie prvky:</strong></p>
+<ul class="simple">
+<li>Kláves “T” – skrytie všetkých ovládacích prvkov</li>
+<li>Kláves “S” - štatistiky vykresľovania</li>
+<li>Kláves “Shift” - pridávanie ďalších objektov do výberu</li>
+<li>Kláves “Ctrl” - odstránenie objektov z výberu</li>
+</ul>
+</div>
+<div class="section" id="zalozka-graph">
+<h2>Záložka GRAPH<a class="headerlink" href="#zalozka-graph" title="Permalink to this headline">¶</a></h2>
+<p><img alt="1000000000000044000000184655EF87_png" src="_images/1000000000000044000000184655EF87.png" />
+- manipulácia s prvkami grafu (no-select mód), pohyb vybraných uzlov v priestore</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018D5CD6FF3_png" src="_images/100000000000004400000018D5CD6FF3.png" />
+- výber jedného prvku grafu (single-select mód)</p>
+<p>Umožňuje sústredenie sa na práve jeden objekt – môže to byt’ hrana aj uzol.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018B2CDE863_png" src="_images/100000000000004400000018B2CDE863.png" />
+- výber viacerých prvkov grafu (multi-select mód)</p>
+<p>Umožňuje vybrať v trojrozmernom zobrazení viacero objektov naraz.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000890000004AE3E8DCFB_png" src="_images/10000000000000890000004AE3E8DCFB.png" />
+- typ výberu: všetko, iba uzly, iba hrany, klastre</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000019684B8DCF_png" src="_images/100000000000004400000019684B8DCF.png" />
+- centrovanie pohľadu vzhľadom na vybraný prvok grafu</p>
+<p>V&nbsp;prípade, že nie je označený žiadny element, kamera bude vycentrovaná na ťažisko grafu</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000440000001877C11C86_png" src="_images/10000000000000440000001877C11C86.png" />
+- pridanie meta uzla do grafu</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000440000001864F64134_png" src="_images/10000000000000440000001864F64134.png" />
+- odstránenie vybraných meta uzlov z&nbsp;grafu</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018BEE97164_png" src="_images/100000000000004400000018BEE97164.png" />
+- ukotvenie vybraných uzlov na aktuálnej pozícii, t. j. nebudú sa pohybovať v závislosti od pôsobenia síl ostatných uzlov</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018670A8433_png" src="_images/100000000000004400000018670A8433.png" />
+- uvoľnenie ukotvených uzlov</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000088000000177AD5BFE4_png" src="_images/1000000000000088000000177AD5BFE4.png" />
+- pridanie hrany medzi dvomi vybranými uzlami</p>
+<p>Umožňuje pridať hranu medzi dvoma vybranými uzlami, kde ešte nie je hrana, inak končí akcia chybovou hláškou. Ideálne je čiernou šípkou vybrať jeden uzol a&nbsp;bielou šípkou ho nastaviť na také miesto, kde sa ho dá spojiť s druhým uzlom - je potrebné mať nastavenie Node v takomto prípade spolu s Multi-select mode.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001723BA0C72_png" src="_images/10000000000000880000001723BA0C72.png" />
+- pridanie uzla do stredu pohľadu</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000890000001632A2B069_png" src="_images/10000000000000890000001632A2B069.png" />
+- odstránenie vybraných elementov (uzly alebo hrany)</p>
+<p>Ak sa rozhodneme pre zmazanie hrany, uzly prepojené s touto hranou v grafe zostávajú.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001888E20502_png" src="_images/10000000000000880000001888E20502.png" />
+,
+<img alt="100000000000008700000017C7ACB39F_png" src="_images/100000000000008700000017C7ACB39F.png" />
+- zafarbenie zvolených uzlov a hrán farbou vybranou z&nbsp;palety nad tlačidlom</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000017CE90E148_png" src="_images/100000000000008800000017CE90E148.png" />
+- aplikovanie textového označenia na vybrané uzly podľa textu z&nbsp;poľa nad tlačidlom</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001840A22079_png" src="_images/10000000000000880000001840A22079.png" />
+- zapnutie/vypnutie zobrazovania popisov uzlov a&nbsp;hrán</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001866413B76_png" src="_images/10000000000000880000001866413B76.png" />
+,
+<img alt="1000000000000088000000195BC88C75_png" src="_images/1000000000000088000000195BC88C75.png" />
+- spustenie/zastavenie rozmiestňovania (animovania) uzlov grafu</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008A0000001A6E8D8B4E_png" src="_images/100000000000008A0000001A6E8D8B4E.png" />
+- zmena odpudivých síl pôsobiacich medzi uzlami</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160317232855" src="_images/160317232855.png" />
+- výber vizuálnej reprezentácie uzla (square, sphere) a výber vizuálnej reprezentácie hrany (quad, cylinder, line)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="_images/dragger-scale.png"><img alt="dragger-scale_png" src="_images/dragger-scale.png" style="width: 1.3232in; height: 0.2295in;" /></a>
+- pridanie nového manipulátora (geometria kocky) do scény, ktorý umožňuje pohyb kamery ľavým tlačidlom myši</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="_images/dragger-rotation.png"><img alt="dragger-rotation_png" src="_images/dragger-rotation.png" style="width: 1.3232in; height: 0.2295in;" /></a>
+- pridanie nového manipulátora (geometria gule) do scény, ktorý umožňuje rotáciu grafu okolo jeho stredu ľavým tlačidlom myši</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="_images/city-layout.png"><img alt="city-layout_png" src="_images/city-layout.png" style="width: 2in; height: 0.1295in;" /></a>
+- reprezentácia grafu ako vizualizačnej metafory mesta (namiesto klasického grafu).</p>
+</div>
+<div class="section" id="zalozka-constraints">
+<h2>Záložka CONSTRAINTS<a class="headerlink" href="#zalozka-constraints" title="Permalink to this headline">¶</a></h2>
+<p><img alt="1000000000000044000000182D96668B_png" src="_images/1000000000000044000000182D96668B.png" />
+– aplikovanie priestorového ohraničenia: povrch gule</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004200000018BF35D45D_png" src="_images/100000000000004200000018BF35D45D.png" />
+- aplikovanie priestorového ohraničenia: obsah gule</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000440000001852E1B1B5_png" src="_images/10000000000000440000001852E1B1B5.png" />
+- aplikovanie priestorového ohraničenia: rovina</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004200000018784AA636_png" src="_images/100000000000004200000018784AA636.png" />
+- aplikovanie priestorového ohraničenia: zjednotenie gule a&nbsp;roviny</p>
+<p>Zjednotenie gule a roviny je vhodné pre zobrazenie grafov s hustým stredom, alebo na veľké grafy.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000044000000181DFF8FF2_png" src="_images/1000000000000044000000181DFF8FF2.png" />
+- aplikovanie priestorového ohraničenia: kružnica</p>
+<p>Aplikovanie obmedzenia na kružnicu na uzly v celom grafe je vhodné pre veľmi riedke grafy alebo na grafy s&nbsp;pravidelnou štruktúrou. Pri hustých grafoch sa hrany medzi uzlami prekrývajú</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004200000018CB8B89FC_png" src="_images/100000000000004200000018CB8B89FC.png" />
+- aplikovanie priestorového ohraničenia: kužeľ</p>
+<p>Obmedzenie na kužeľ je vhodným riešením v prípadoch, kedy má jeden uzol výrazne vyšší počet hrán ako ostatné uzly.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018BE4E0D99_png" src="_images/100000000000004400000018BE4E0D99.png" />
+- aplikovanie priestorového ohraničenia: kužeľový strom</p>
+<p>Po aplikácií sa uzly rozdelia do skupín podľa spoločného rodiča. Na tieto skupiny sa aplikujú obmedzenia na kužeľ, ktoré sú následne obmedzené na roviny v závislosti od hĺbky uzlov v strome. Kužeľový strom sa aplikuje automaticky na celý graf na základe používateľom vybraného koreňového uzla. Jedine v&nbsp;prípade, že graf nie je spojitý, tak sa aplikuje iba na komponent, ktorý obsahuje koreňový uzol.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004200000018B79C9F77_png" src="_images/100000000000004200000018B79C9F77.png" />
+- odstránenie vybraných priestorových ohraničení</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008D00000015E609BD30_png" src="_images/100000000000008D00000015E609BD30.png" />
+- aplikovanie priestorového ohraničenia: povrch valca</p>
+<p>Vloží do scény tzv. bod záujmu, od ktorého sú uzly zobrazovaného grafu odtláčané do tvaru valca. Polomer valca sa dá nastaviť pomocou číselníka.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008D00000015853A8A1A_png" src="_images/100000000000008D00000015853A8A1A.png" />
+- aplikovanie priestorového ohraničenia: povrch kužeľa</p>
+<p>Vloží do scény tzv. bod záujmu, od ktorého sú uzly zobrazovaného grafu odtláčané do tvaru kužeľa. Polomer kužeľa sa dá nastaviť pomocou číselníka. Veľkosť kužeľa sa nastavuje automaticky podľa toho, kam sa používateľ prostredníctvom kamery pozerá.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018F5649D01_png" src="_images/100000000000004400000018F5649D01.png" />
+- aplikovanie radiálneho rozmiestnenia na označené uzly</p>
+<p>Odporúča sa používať pri stromovom type grafu. Použitie rozmiestnenia na označené uzly dáva používateľovi nové možnosti ako zväčšenie priestoru označením uzlom, alebo manuálne zhlukovanie uzlov.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000042000000182A4D4919_png" src="_images/1000000000000042000000182A4D4919.png" />
+- výber módu vykreslenia radiálneho rozmiestnenia (drôtený, plný)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008C000000189BBE6071_png" src="_images/100000000000008C000000189BBE6071.png" />
+- nastavenie módu 2D/3D radiálneho rozmiestnenia</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="_images/100000000000008F00000088EB205EFA.png"><img alt="100000000000008F00000088EB205EFA_png" src="_images/100000000000008F00000088EB205EFA.png" style="width: 1.4874in; height: 1.4154in;" /></a></p>
+<ol class="arabic simple">
+<li>nastavenie veľkosti rozmiestnenia</li>
+<li>nastavenie priehľadnosti rozmiestnenia</li>
+<li>nastavenie počtu zobrazených gúľ</li>
+<li>nastavenie faktora zosilnenia odpudivých síl v radiálnom rozmiestnení pre uzly, ktoré nie sú na rovnakej vrstve</li>
+<li>nastavenie faktora zosilnenia odpudivých síl v&nbsp;radiálnom rozmiestnení pre uzly, ktoré sú na rovnakej vrstve</li>
+</ol>
+<p>Veľkosť radiálneho zobrazenia sa dá nastaviť v rozmedzí 0 – 300, parameter priesvitnosti 0 - 100 %, veľkosť faktora zosilnenia odpudivých síl sa nastavuje medzi hodnotami 1 - 5000.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000520000000F5DEEA0DC_png" src="_images/10000000000000520000000F5DEEA0DC.png" />
+- prepínač medzi normálnou a vertigo kamerou</p>
+<p>Tento mód kamery je vhodné použiť vtedy, keď chce používateľ meniť dva rôzne pohľady na graf: lokálny pohľad, pri ktorom môže používateľ s väčšou presnosťou skúmať jednotlivé uzly a vzťahy medzi nimi a globálny pohľad, pri ktorom môže používateľ skúmať vzťahy medzi uzlami a rozloženie uzlov v&nbsp;daných hĺbkach kostry grafu v globálnom kontexte.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001733C6ADD9_png" src="_images/10000000000000880000001733C6ADD9.png" />
+- zvýšenie vzájomnej vzdialenosti medzi rovinami</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000017471CE907_png" src="_images/100000000000008800000017471CE907.png" />
+- zníženie vzájomnej vzdialenosti medzi rovinami</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000088000000171E96B1AF_png" src="_images/1000000000000088000000171E96B1AF.png" />
+- pridanie dvoch paralelných rovín</p>
+<p>Obmedzenie na roviny sa aplikuje pri grafoch s minimálnou maximálnou hĺbkou kostry grafu hodnoty 2. Koreňový uzol v kostre grafu určí program - vyberie uzol s najväčším počtom hrán. Pri zrušení obmedzenia sa uzly „odpoja“ od roviny.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000017A7D548F8_png" src="_images/100000000000008800000017A7D548F8.png" />
+- odobranie dvoch paralelných rovín</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008A00000016BC7855D7_png" src="_images/100000000000008A00000016BC7855D7.png" />
+- zmena násobiča odpudivých síl medzi uzlami</p>
+<p>Násobič odpudivých síl medzi uzlami je na začiatku nastavený na 1 kvôli prvému pridaniu dvoch rovín do priestoru - nechceme, aby sa hneď zväčšili odpudivé sily.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000018F6B763F7_png" src="_images/100000000000008800000018F6B763F7.png" />
+- vypnutie všetkých predchádzajúcich obmedzení</p>
+</div>
+<div class="section" id="zalozka-clustering">
+<h2>Záložka CLUSTERING<a class="headerlink" href="#zalozka-clustering" title="Permalink to this headline">¶</a></h2>
+<p><img alt="1000000000000044000000180B304C64_png" src="_images/1000000000000044000000180B304C64.png" />
+- zlúčenie vybraných uzlov</p>
+<p>Umožňuje zlúčiť vybrané uzly do jedného spoločného uzla. Takýto uzol sa bude v pokračovaní zobrazovať modrou farbou.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004400000018C96589BC_png" src="_images/100000000000004400000018C96589BC.png" />
+- zrušenie zlúčenia vybraných uzlov</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008A000000163484BBE0_png" src="_images/100000000000008A000000163484BBE0.png" />
+- definovanie algoritmu, ktorým sa bude zhlukovať graf (adjacency, leafs, neighbours)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000006700000016A5463953_png" src="_images/100000000000006700000016A5463953.png" />
+- nastavenie počtu rekurzií pre vybraný algoritmus</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001757645A7E_png" src="_images/10000000000000880000001757645A7E.png" />
+- spustenie zhlukovania nad aktívnym grafom</p>
+<p>Ak zhlukovanie trvá viac ako 1 sekundu, objaví sa indikátor postupu.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160317233911" src="_images/160317233911.png" /></p>
+<ol class="arabic simple">
+<li>spustenie algoritmu na zväzovanie hrán</li>
+<li>pozastavenie algoritmu na zväzovanie hrán</li>
+<li>úplne zastavenie algoritmu na zväzovanie hrán a zobrazenie pôvodného grafu</li>
+<li>vstupné pole na zadanie konštanty, určujúcej silu akou sú hrany k sebe počas zväzovacieho algoritmu priťahované</li>
+</ol>
+<p><strong>Po použití funkcie zhlukovania, sa odkryjú nasledujúce možnosti:</strong></p>
+<p><img alt="100000000000003E00000031AFCE8E36_png" src="_images/100000000000003E00000031AFCE8E36.png" />
+auto  - automatická priehľadnosť - mení sa na základe vzdialenosti zhlukov od kamery</p>
+<p>selected - priehľadnosť označeného zhluku – pomocou posuvníka(nižšie) sa mení priehľadnosť len označených zhlukov</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000900000001DB1EF6F8A_png" src="_images/10000000000000900000001DB1EF6F8A.png" />
+- posúvaním upravíme priehľadnosť označených zhlukov</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008E000000470C14C2FC_png" src="_images/100000000000008E000000470C14C2FC.png" />
+- posúvaním sa mení prahová hodnota, pri ktorej sa menia tvary zhlukov</p>
+<p>Spodné číslo udáva, koľko uzlov obsahuje daný zhluk (v tomto prípade 8).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Pri označení konkrétneho zhluku sa odkryjú nasledujúce možnosti:</strong></p>
+<p><img alt="100000000000008800000017D9BD7C96_png" src="_images/100000000000008800000017D9BD7C96.png" />
+- kliknutím zmeníme označený zhluk na obmedzovač</p>
+<p>Obmedzuje pozície uzlov tak, aby z neho nevyšli von. Keď obmedzovač posunieme dostatočne ďaleko, t.j. mimo pôvodnej pozície uzlov, uzly sa začnú lepiť na jeho stenu a posúvať spolu s ním. Ignoruje príťažlivé a odpudivé sily medzi ním a ostatnými uzlami grafu (posunutie zhluku bez obmedzovača spôsobí posun celého grafu za týmto zhlukom). Obmedzovač začína svoje pôsobenie ako kocka, je možné zmeniť jeho tvar naťahovaním a stlačením.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000880000001702681B5B_png" src="_images/10000000000000880000001702681B5B.png" />
+- znovurozmiestnenie uzlov v priestore po tom, ako sa nalepia na hranu obmedzovača</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008A00000022C0AD7A66_png" src="_images/100000000000008A00000022C0AD7A66.png" />
+- upravenie odpudivej sily medzi uzlami v označenom zhluku</p>
+<p>Čím je hodnota väčšia, tým budú uzly ďalej od seba.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Ďalšie funkcie obmedzovača:</strong></p>
+<p>Ak na zhluk zaregistrujeme obmedzovač, môžeme s ním jednoducho pohybovať a meniť jeho tvar pomocou klávesových skratiek a myši:</p>
+<ul class="simple">
+<li>Pohyb – metóda ťahaj a pusť (    drag &amp; drop    )</li>
+<li>Zmena veľkosti – držíme <strong>Ctrl</strong> a točíme kolieskom myši</li>
+<li>Zmena tvaru<ul>
+<li>na osy x – držíme        <strong>X</strong>        a        <strong>Ctrl</strong>        a točíme kolieskom myši</li>
+<li>na osy y – držíme       <strong>Y</strong>        a        <strong>Ctrl</strong>        a točíme kolieskom myši</li>
+<li>na osy z – držíme        <strong>Z</strong>        a        <strong>Ctrl</strong>        a točíme kolieskom myši</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="zalozka-connections">
+<h2>Záložka CONNECTIONS<a class="headerlink" href="#zalozka-connections" title="Permalink to this headline">¶</a></h2>
+<p><img alt="100000000000008A00000022787850BE_png" src="_images/100000000000008A00000022787850BE.png" />
+- napísanie mena, pod ktorým bude používateľ vystupovať v kolaborácii</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000017419C7E57_png" src="_images/100000000000008800000017419C7E57.png" />
+- spustenie/zastavenie servera</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008A000000220A716225_png" src="_images/100000000000008A000000220A716225.png" />
+- napísanie IP adresy servera</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000017EFA4E2A5_png" src="_images/100000000000008800000017EFA4E2A5.png" />
+- pripojenie(odpojenie) ku(od) kolaborácii</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008C00000046A4D57BEB_png" src="_images/100000000000008C00000046A4D57BEB.png" />
+- zoznam používateľov (zoradený abecedne), v ktorom je možné jedného vybrať a&nbsp;použiť nasledujúce funkcie:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000003600000036926EBFDC_png" src="_images/100000000000003600000036926EBFDC.png" />
+- po výbere si môžeme zvoliť jednu funkciu z dvojice: <em>Spy</em> (špehovať) a <em>Center</em> (centrovať).</p>
+<p>Po aktivovaní funkcie Spy získa používateľ pohľad iného používateľa, ktorý je priebežne aktualizovaný – znamená to, že pohybom sledovaného používateľa sa aktualizuje aj pohľad sledujúceho. Po aktivácii Center nasmeruje pohľad používateľa tak, aby v jeho strede bol iný používateľ. Pri centrovaní platí to isté, čo pri špehovaní – teda pri aktualizácii polohy centrovaného používateľa sa natáča aj pohľad centrujúceho používateľa. Po označení políčka Shout sa ostatným používateľom v scéne zobrazí pri vašom mene ikona znázorňujúca, že sa pokúšate upútať pozornosť.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000890000002BADD2CCC3_png" src="_images/10000000000000890000002BADD2CCC3.png" />
+- nastavenie veľkosti avatarov v&nbsp;scéne</p>
+<p>Avatar je kužeľ, ktorého kruhová podstava znázorňuje smer, ktorým sa používateľ pozerá.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="zalozka-evolution">
+<h2>Záložka EVOLUTION<a class="headerlink" href="#zalozka-evolution" title="Permalink to this headline">¶</a></h2>
+<p><img alt="EvolutionTab" src="images/EvolutionTab.png" />
+- Po rozkliknutí tabu Evolution (1) sa zobrazia možnosti evolúcie</p>
+<blockquote>
+<div><ol class="arabic simple" start="2">
+<li>Lifespan - možnosť ponechania vymazaných uzlov vo vizualizácii. Prednastavená hodnota 0 znamená, že vymazané uzly sa automaticky vymažú z grafu. V prípade hodnoty väčšej ako 0 vymazané uzly v grafe zotrvávajú o verzie dlhšie podľa nastavenej hodnoty</li>
+<li>Change commits - prepínač spracovania Git repozitáru. Ak je zaškrtnutý, inicializuje sa spracovanie na úroveň grafu volaní. V opačnom prípade - na úroveň histórie Git repozitáru</li>
+<li><dl class="first docutils">
+<dt>Kombo box s výberom vizualizácie - prepínanie sa medzi jednotlivými možnosťami vizualizácie grafu volaní</dt>
+<dd><ul class="first last">
+<li><em>LuaStat</em> - vizualizácia softvérových metrík pomocou analýzy Lua zdrojového kódu</li>
+<li><em>Difference</em> - pohľad na zmeny, ktorými softvér prešiel pri prechode na novú verziu</li>
+<li><em>Changes</em> - aktivovanie filtrovania nad práve aktívnou vizualizáciou</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Kombo box s výberom filtra - výber vhodnej skupiny filtra</dt>
+<dd><ul class="first last">
+<li>Prednastavená možnosť <em>All</em> - všetky prvky grafu sú zobrazené</li>
+<li><em>Authors</em> - filtrovanie podľa autorov zmien v softvéri</li>
+<li><em>Structure</em> - filtrovanie podľa štruktúry</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Kombo box zoznamu možností - moznosti zavisia od vybraneho filtru</dt>
+<dd><ul class="first last">
+<li>zoznam autorov s možnosťou zobrazenia zmien všetkých autorov - <em>All</em></li>
+<li>štruktúra - <em>Files</em> (zobrazí v grafe volaní len uzly reprezentujúce adresáre a súbory), <em>Local Functions</em> (zobrazí rozšírenú možnosť Files spolu s uzlami lokálnych funkcií), <em>Global Functions</em> (zobrazia sa uzly možnosti Local Functions spolu s uzlami globálnych funkcií) a <em>Modules</em> (zobrazí všetky štruktúry, ktoré sa v grafe nachádzajú)</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ol>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="AnimMenu" src="_images/AnimMenu.PNG" />
+- panel ovládania evolúcie</p>
+<ol class="arabic simple">
+<li>Prechod na predchádzajúcu verziu - možnosť, kedy sa stav grafu vráti o jednu verziu dozadu</li>
+<li>Prechod na nasledujúcu verziu - možnosť, kedy sa stav grafu posunie o jednu verziu dopredu</li>
+<li>Tlačidlo informácií o verzii - zobrazí informácie o aktuálne zobrazenej verzii. Medzi zobrazené informácie patrí identifikátor, autor a dátum commitu spolu so zoznamom súborov, ktoré boli zmenené</li>
+<li>Sputenie/zastavenie animácie - aktivovanie/zastavenie automatického prechodu na novú verziu</li>
+<li>Posuvník - presun na konkrétnu verziu pomocou skokového prechodu medzi verziami</li>
+<li>Indikátor verzie - poskytuje informáciu o aktuálne zobrazenej verzii</li>
+<li>Spomalenie animácie - regulovanie rýchlosti animácie</li>
+<li>Zrýchlenie animácie - regulovanie rýchlosti animácie</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="zalozka-more-features">
+<h2>Záložka MORE FEATURES<a class="headerlink" href="#zalozka-more-features" title="Permalink to this headline">¶</a></h2>
+<p><img alt="btn_360" src="_images/btn_360.png" />
+- zapnutie 3D myšky (musí byť aktivovaný driver)</p>
+<p><img alt="160317235006" src="_images/160317235006.png" />
+- ak je zaškrtnuté, kamera nasmerovaná na graf sa pohybuje na základe pohybu tváre, značky alebo rúk, inak sa na základe týchto akcií rotuje samotný graf</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160317235033" src="_images/160317235033.png" />
+- povoľuje použitie kamery</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000008800000017AA0AED20_png" src="_images/100000000000008800000017AA0AED20.png" />
+- otvorenie okna pre prácu s kamerou</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000088000000170254F076_png" src="_images/1000000000000088000000170254F076.png" />
+- otvorenie okna pre prácu s hlasovým ovládaním</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Speech je momentálne vylúčený z projektu</p>
+</div>
+</div></blockquote>
+<p><a class="reference internal" href="_images/100000000000008800000017413B8E7C.png"><img alt="100000000000008800000017413B8E7C_png" src="_images/100000000000008800000017413B8E7C.png" style="width: 1.4169in; height: 0.2398in;" /></a>
+- zapnutie ovládania pomocou Leap Senzor–u</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Okno pre prácu s kamerou</strong></p>
+<p><img alt="100000000000006B00000042C3F83F22_png" src="_images/100000000000006B00000042C3F83F22.png" />
+- prispôsobenie ľavej strany okna pre ovládanie funkcionality rozpoznávania tváre (pri zapínaní treba zaškrtnúť Camera rotation a Camera enabled).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000065000000173A10D902_png" src="_images/1000000000000065000000173A10D902.png" />
+- zvolenie kamerového zariadenia a následným potvrdením objavenie záberu z kamery</p>
+<p>Ukončiť túto akciu je možné tlačidlom „StopFaceRec“ (ak používateľ zatvoril okno, môže ho vrátiť na grafický interface opätovným kliknutím na „StartCamera“ a potom pozastaviť detekciu). V prípade detegovanej tváre (detekcia je reprezentovaná zeleným obdĺžnikom) sa kamera alebo graf pohybuje vďaka pohybu tváre.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518190503" src="_images/160518190503.png" />
+- okno pre výber snímacieho zariadenia</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000007000000041B635012D_png" src="_images/100000000000007000000041B635012D.png" />
+- prispôsobenie ľavej strany okna pre ovládanie funkcionality rozpoznávania značky</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000650000001796A2AF29_png" src="_images/10000000000000650000001796A2AF29.png" />
+- zvolenie kamerového zariadenia a následným potvrdením objavenie záberu z kamery určenej pre rozpoznávanie značky a graf sa začne otáčať a pohybovať so značkou</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000004F0000000FEC4CF6B8_png" src="_images/100000000000004F0000000FEC4CF6B8.png" />
+- nastavenie aktuálne snímanie ako pozadie pre graf</p>
+<p>Je potrebné zmeniť parameter „Viewer.SkyBox.Noise“ v konfiguračnom súbore na hodnotu 2 alebo 3 (odporúčané je 3).</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000201000000630000002915638961_png" src="_images/10000201000000630000002915638961.png" />
+- prepínanie medzi pohybom podľa značky ako keby sa kamera pozerala na používateľa a naopak</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160321173407" src="_images/160321173407.png" />
+- zapnutie korekcie</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000006500000017979E34AC_png" src="_images/100000000000006500000017979E34AC.png" />
+- nastavenie korekčných parametrov</p>
+<p>Podľa predvolených nastavení sa značka pohybuje tak, ako keby sa kamera pozerala vo vodorovnom smere. Ak by sa pozerala napr. na stôl pod miernym sklonom dole, graf by sa pri posúvaní značky po stole neposúval korektne. Preto je možné nastaviť korekčné parametre. Najskôr je potrebné nastaviť značku do polohy, kedy je detegovaná na spodnom okraji a následne stačiť toto tlačidlo. Po nastavení sa aktivuje opcia „Correction“ (uvedené vyššie), ktorou je možné zapnúť korekciu.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="1000000000000065000000177C91CF62_png" src="_images/1000000000000065000000177C91CF62.png" />
+- zmena spôsobu použitia značky v prípade, že používateľ má k dispozícii len jednu značku</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000003D0000000F5820E584_png" src="_images/100000000000003D0000000F5820E584.png" />
+- vypnutie/zapnutie zobrazenia videa</p>
+<p>Toto prepínanie a vypnutie zobrazenia video má vplyv len na zobrazenie v rámci tohto ovládacieho okna „Face Recognition“ and „Marker Detection“ a neovplyvňuje to ani voľbu kamery pre video pozadie.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518190900" src="_images/160518190900.png" />
+- Interakcia s vizualizáciou v obohatenej realite</p>
+<blockquote>
+<div><ul class="simple">
+<li>Možnosť <em>Custom light</em>, vyznačená modrou, ktorá slúži na prepínanie vlastného a základného zdroja svetla</li>
+<li>Možnosť <em>Shadow</em>, vyznačená žltou, ktorá slúži na zapínanie a vypínanie generovania tieňov</li>
+<li>Možnosť <em>Base</em>, vyznačená červenou, ktorá slúži na zobrazenie a skrytie základne</li>
+<li>Možnosť <em>Axes</em>, vyznačená ružovou, ktorá slúži na zobrazenie a skrytie pomocných osí</li>
+<li>Tlačidlo <em>Center graph</em>, vyznačené svetlo modrou, ktoré slúži na umietnetie grafu nad stred základne</li>
+</ul>
+</div></blockquote>
+<p><strong>Okno pre prácu s kinectom a&nbsp;arucom</strong></p>
+<p><img alt="1000000000000088000000179195620E_png" src="_images/1000000000000088000000179195620E.png" />
+- zapnutie detekcie</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000005E00000017B1B1298F_png" src="_images/100000000000005E00000017B1B1298F.png" />
+- zachytenie kádra s následnou možnosťou dať ho na pozadie</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160321171923" src="_images/160321171923.png" />
+- zapnutie rozpoznávania značiek</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="100000000000005E0000000F773D7D28_png" src="_images/100000000000005E0000000F773D7D28.png" />
+- prepínanie medzi detekovaním ruky pre manipuláciu grafu alebo kamery v podobe rotovania a medzi detekovaním ruky pre funkciu “klik” (pohyb ruky do hĺbky, nie vertikálne alebo horizontálne)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000000000000580000000F1A585785_png" src="_images/10000000000000580000000F1A585785.png" />
+- vypne možnosť približovania</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="_images/100000000000004700000029E932FAEF.png"><img alt="100000000000004700000029E932FAEF_png" src="_images/100000000000004700000029E932FAEF.png" style="width: 0.7398in; height: 0.4276in;" /></a>
+- nastavenie práce s arucom</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518144428" src="_images/160518144428.png" />
+- zobrazenie okna projekčného zobrazenia</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518144843" src="_images/160518144843.png" />
+- v projekcnom zobrazeni - Projector - spinboxy na zmenu parametrov projektora (odhora) - zorné pole, pozícia (súradnice x, y, z), smer projekcie(súradnice x, y, z)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518145110" src="_images/160518145110.png" />
+- v projekcnom zobrazeni - Viewer - spinboxy na zmenu parametrov pozorovateľa (odhora) - zorné pole, pozícia (súradnice x, y, z), smer projekcie (súradnice x, y, z)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518145709" src="_images/160518145709.png" />
+- v projekcnom zobrazeni - Graph - spinboxy na zmenu parametrov grafu (odhora) - pozícia (súradnice x, y, z), polomer, checkbox Place graph na potvrdenie použitia parametrov grafu (štandartne označený)</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="160518145922" src="_images/160518145922.png" />
+- potvrdenie zadaných parametrov scény</p>
+<p><strong>Hlasové príkazy pre Speech</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>select all nodes - vybratie všetkých uzlov</li>
+<li>select left side - vybratie uzlov na ľavej strany</li>
+<li>select right side - vybratie uzlov na pravej strany</li>
+<li>clear screen - zrušenie vybratia uzlov</li>
+<li>sphere - sformovanie gule pre vybrané uzly</li>
+<li>unset restrictions - návrat k pôvodnému stavu - zrušenie akcie “sphere”</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="hlavne-okno">
+<h2>Hlavné okno<a class="headerlink" href="#hlavne-okno" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/100000000000006B00000016E3D0F655.png"><img alt="100000000000006B00000016E3D0F655_png" src="_images/100000000000006B00000016E3D0F655.png" style="width: 1.115in; height: 0.2295in;" /></a>
+- filtrovanie hrán</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><a class="reference internal" href="_images/100000000000007F00000016BB966294.png"><img alt="100000000000007F00000016BB966294_png" src="_images/100000000000007F00000016BB966294.png" style="width: 1.3232in; height: 0.2295in;" /></a>
+- filtrovanie uzlov</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Príklady príkazov:</p>
+<blockquote>
+<div><ul class="simple">
+<li>“params.type like ’file’ or params.type like ’directory’”</li>
+<li>“params.name like ’init%.lua’ and params.type like ’function’”</li>
+<li>“params.type like ’function’”</li>
+</ul>
+</div></blockquote>
+<p>Filter je navrhnutý pre grafovú vizualizáciu softvéru s využitím softvérových metrík jazyka Lua a je vyhodnotený po stlačení klávesu „Enter“.</p>
+<p><a class="reference internal" href="_images/10000000000000AD00000017929650C3.png"><img alt="10000000000000AD00000017929650C3_png" src="_images/10000000000000AD00000017929650C3.png" style="width: 1.8024in; height: 0.2398in;" /></a>
+- zobrazí dialóg pre výber súborov a po vybratí vykreslí do poľa pod tlačidlom graf volaní funkcií týchto súborov</p>
+<p>Pri označení práve jedného vrcholu v poli sa zobrazí stromová štruktúra informácií o tomto vrchole.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><img alt="10000201000000AD00000018AD24406D" src="_images/10000201000000AD00000018AD24406D.png" />
+- prepínanie medzi zobrazovaním jedného prehliadača pre každý uzol a zobrazovaním jedného prehliadača pre všetky vyznačené uzly</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="git-repozitar">
+<h2>Git repozitár<a class="headerlink" href="#git-repozitar" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><img alt="Options" src="_images/Options.PNG" /></dt>
+<dd><ol class="first last arabic">
+<li><p class="first">Settings / Options - zobrazenie dialógového okna s konfiguráciou</p>
+</li>
+<li><p class="first">Možnosť Git - zobrazia sa možnosti konfigurácie spracovania Git repozitáru</p>
+</li>
+<li><p class="first">Možnosti konfigurácie spracovania Git repozitáru</p>
+<blockquote>
+<div><ul class="simple">
+<li>vyčlenenie adresárov (ExcludeDirectories) - ľubovoľný počet názvov adresárov oddelených znakom “,”. Pre zadanú hodnotu sa pri spracovaní Git repozitáru odignorujú všetky súbory, ktoré vo svojej relatívnej ceste obsahujú adresár spec.</li>
+<li>ExtensionFilter - funguje obrátene, pričom ponecháva len tie súbory, ktorých koncovka súboru sa zhoduje s jednou zo zadaných hodnôt. Hodnota taktiež môže obsahovať viacero koncoviek súborov, pričom musia byť oddelené znakom “,”</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vuzix_leap.html" class="btn btn-neutral float-right" title="Používateľská príručka pre Vuzix a Leap" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_guide_vc10.html" class="btn btn-neutral" title="Inštalačný návod (VC10)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install guide pre macOS &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre používateľov" href="users.html"/>
+        <link rel="next" title="Install guide pre Windows Subsystem for Linux (WSL)" href="install_guide_wsl.html"/>
+        <link rel="prev" title="Návod pre Linux" href="install_guide_linux.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="users.html">Pre používateľov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc12.html">Inštalačný návod (VC12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_linux.html">Návod pre Linux</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Install guide pre macOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vytvarane-a-testovane-pre-verziu-10-13-high-sierra">(vytvárané a testované pre verziu 10.13 High Sierra)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nastavenie-qt-creatora">Nastavenie Qt Creatora:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-run-konfiguracia">Build &amp; Run konfigurácia:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zname-problemy-riesenia-a-rady">Známe problémy, riešenia a rady</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#q-build-error-usr-local-mkspecs-macx-clang">Q: Build error  “/usr/local/.//mkspecs/macx-clang”</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_wsl.html">Install guide pre Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc10.html">Inštalačný návod (VC10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html">Používateľská príručka pre 3D Softviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vuzix_leap.html">Používateľská príručka pre Vuzix a Leap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Pre vývojárov</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="users.html">Pre používateľov</a> &raquo;</li>
+        
+      <li>Install guide pre macOS</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/install_guide_macos.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-guide-pre-macos">
+<h1>Install guide pre macOS<a class="headerlink" href="#install-guide-pre-macos" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vytvarane-a-testovane-pre-verziu-10-13-high-sierra">
+<h2>(vytvárané a testované pre verziu 10.13 High Sierra)<a class="headerlink" href="#vytvarane-a-testovane-pre-verziu-10-13-high-sierra" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Inštalácia Homebrew príkazom:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">ruby</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;$(curl -fsSL \https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Nainštalovať git:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">git</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Nainštalovať OpenCV - MUSÍ byť verzia 2.x, nie 3 a vyššia! (po inštalácii skontrolovať príkazom brew info opencv&#64;2, vyhovujúca verzia je napr.  2.4.13.4):</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">opencv</span><span class="nd">@2</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li>Vytvoriť symbolické linky pre opencv&#64;2:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">link</span> <span class="n">opencv</span>\<span class="nd">@2</span>  <span class="o">--</span><span class="n">force</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="5">
+<li>Nainštalovať OpenNI2:</li>
+</ol>
+<ul>
+<li><p class="first">možné pomocou Homebrew nasledovne:</p>
+<blockquote>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">tap</span> <span class="n">homebrew</span><span class="o">/</span><span class="n">science</span>
+<span class="n">brew</span> <span class="n">tap</span> <span class="n">totakke</span><span class="o">/</span><span class="n">openni2</span>
+<span class="n">brew</span> <span class="n">install</span> <span class="n">openni2</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">dostupné <a class="reference external" href="https://drive.google.com/open?id=0Bx3FU7Baa_8pOUlrTmJ4VHJzZFU">na stiahnutie v Google Drive</a></p>
+</li>
+</ul>
+<ol class="arabic simple" start="6">
+<li>Nainštalovať Boost:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">boost</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="7">
+<li>Nainštalovať CMake:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">cmake</span>
+</pre></div>
+</div>
+<p>8.      Nainštalovať Qt (preferovaná verzia  5.9.2):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">qt</span>
+</pre></div>
+</div>
+<p>9.      Vytvoriť symbolické linky pre Qt:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">link</span> <span class="n">qt</span> <span class="o">--</span><span class="n">force</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="10">
+<li>skontrolovať verziu a symbolické linky pre Qt príkazom: qmake –version. Ak je výstup command not found, skontrolovať v Homebrew: brew info qt. Ak je Qt nainštalované, no nevieme nájsť qmake, Homebrew nevytvoril správne symbolické linky. Skúsiť brew unlink qt a znova brew link qt –force, prípadne reinstall</li>
+<li>Nainštalovať sphinx:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
+</pre></div>
+</div>
+<p>alebo</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">sphinx</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="12">
+<li>Nainštalovať astyle:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">astyle</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="13">
+<li>Nainštalovať pcl:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">pcl</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="14">
+<li>Nainštalovať doxygen:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">doxygen</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="15">
+<li>Nainštalovať cppcheck:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">install</span> <span class="n">cppcheck</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="16">
+<li>Nainštalovať ovládače pre 3D myš dostupné na odkaze alebo v Google Drive projektu.</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic simple" start="17">
+<li>Nainštalovať Qt Creator:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">brew</span> <span class="n">cask</span> <span class="n">install</span> <span class="n">qt</span><span class="o">-</span><span class="n">creator</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="18">
+<li>Naklonovať projekt:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">BergiSK</span><span class="o">/</span><span class="mi">3</span><span class="n">dsoftviz</span> <span class="o">--</span><span class="n">recursive</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="19">
+<li>Otvoriť Terminál, cd do priečinka ~/3dsoftviz a aktualizovať submoduly:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span>git submodule update –-recursive
+</pre></div>
+</div>
+<ol class="arabic simple" start="20">
+<li>Otvorit’ QtCreator a otvorit’ CmakeLists.txt z priečinka, kde bol naklonovaný projekt.</li>
+</ol>
+</div>
+<div class="section" id="nastavenie-qt-creatora">
+<h2>Nastavenie Qt Creatora:<a class="headerlink" href="#nastavenie-qt-creatora" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>cmd + , pre otvorenie nastavení</li>
+<li>skontrolovať záložku Qt Versions, ak je dostupné Qt 5.x, nechať tak. Ak nie, treba nájsť binárku qmake (defaultne po inštalácii Qt cez Homebrew v /usr/local/bin/).</li>
+<li>skontrolovať záložku CMake. Ak nie je detekovaný žiadny, treba nájsť binárku cmake (defaultne po inštalácii CMake cez Homebrew v /usr/local/bin/).</li>
+<li>ísť do zákožky Kits.</li>
+<li>Zvoliť konfiguráciu a vpravo kliknúť na Clone</li>
+<li>Klinúť na novú konfiguráciu (dole sa otvorí editačné okno)</li>
+<li>Name zvoliť napr. unity</li>
+<li>C aj C++ Compiler zvoliť Clang</li>
+<li>Qt version zvoliť Qt 5.x</li>
+<li>CMake Tool zvoliť na CMake zo záložky CMake</li>
+<li>Vpravo hore klikúť na Make Default</li>
+<li>Potvrdiť tlačidlom OK</li>
+</ul>
+</div>
+<div class="section" id="build-run-konfiguracia">
+<h2>Build &amp; Run konfigurácia:<a class="headerlink" href="#build-run-konfiguracia" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>V ľavom menu Qt Creatora kliknúť na Projects</li>
+<li>Kliknúť na Build pri unity</li>
+<li>Edit build configuration zvoliť na Debug</li>
+<li>Build directory zvoliť na ~/3dsoftviz/build</li>
+<li>Pri položke Build steps kliknúť na Details a zaškrtnúť install_unity</li>
+<li>Kliknutím na Build project (kladivo) projekt zbuildovať</li>
+<li>Naľavo kliknúť na Run pri unity</li>
+<li>Pri Run configuration rozbaliť Add menu a zvoliť Custom Executable</li>
+<li>Zvoliť binárku 3dsoftviz/_install/bin/3DSoftviz</li>
+<li>Working directory nastaviť na 3dsoftviz/_install/bin</li>
+</ul>
+</div>
+<div class="section" id="zname-problemy-riesenia-a-rady">
+<h2>Známe problémy, riešenia a rady<a class="headerlink" href="#zname-problemy-riesenia-a-rady" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="q-build-error-usr-local-mkspecs-macx-clang">
+<h3>Q: Build error  “/usr/local/.//mkspecs/macx-clang”<a class="headerlink" href="#q-build-error-usr-local-mkspecs-macx-clang" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CMake</span> <span class="n">Error</span> <span class="n">at</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">cmake</span><span class="o">/</span><span class="n">Qt5Core</span><span class="o">/</span><span class="n">Qt5CoreConfig</span><span class="o">.</span><span class="n">cmake</span><span class="p">:</span><span class="mi">15</span> <span class="p">(</span><span class="n">message</span><span class="p">):</span>
+  <span class="n">The</span> <span class="n">imported</span> <span class="n">target</span> <span class="s2">&quot;Qt5::Core&quot;</span> <span class="n">references</span> <span class="n">the</span> <span class="n">file</span>
+
+     <span class="s2">&quot;/usr/local/.//mkspecs/macx-clang&quot;</span>
+</pre></div>
+</div>
+<p><strong>A:</strong> Chyba pravdepodobne je na strane Homebrew, pri inštalácii Qt5 nevytvorí dve symlinky (ani po zavolaní brew link). Musíte ich vytvoriť ručne (ak treba, upravte verziu v ceste, návod bol robený pri nainštalovanej 5.9.2):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">Cellar</span><span class="o">/</span><span class="n">qt</span><span class="o">/</span><span class="mf">5.9</span><span class="o">.</span><span class="mi">2</span><span class="o">/</span><span class="n">mkspecs</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">mkspecs</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">Cellar</span><span class="o">/</span><span class="n">qt</span><span class="o">/</span><span class="mf">5.9</span><span class="o">.</span><span class="mi">2</span><span class="o">/</span><span class="n">plugins</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">plugins</span>
+</pre></div>
+</div>
+<p>Ak príkaz zlyhá, pretože symlinky už existujú, zmažte ich a skúste znova.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install_guide_wsl.html" class="btn btn-neutral float-right" title="Install guide pre Windows Subsystem for Linux (WSL)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_guide_linux.html" class="btn btn-neutral" title="Návod pre Linux" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

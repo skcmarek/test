@@ -1,0 +1,371 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Cpplint &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Metodiky" href="methodology.html"/>
+        <link rel="next" title="CodeReview" href="codereview.html"/>
+        <link rel="prev" title="CppCheck" href="cppcheck.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Akceptačné testovanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logbenchlib.html">Logovacie a benchmarkingové knižnice</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="methodology.html">Metodiky</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cpp-howto.html">Ako programovat v C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cppcheck.html">CppCheck</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Cpplint</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ako-pouzivat-v-qtcreatore-windows">ako pouzivat v QTCreatore (Windows)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ako-pouzivat-linux">ako pouzivat (Linux)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#poznamky-k-reportom">poznamky k reportom</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="codereview.html">CodeReview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astyle.html">AStyle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plantuml.html">Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gitflow.html">Gitflow metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphinx.html">Sphinx dokumentacia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tfs.html">TFS metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.html">Logovanie s knižnicou Easylogging++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="igloo.html">Metodika na písanie BDD testov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+          <li><a href="methodology.html">Metodiky</a> &raquo;</li>
+        
+      <li>Cpplint</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cpplint.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cpplint">
+<h1>Cpplint<a class="headerlink" href="#cpplint" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0CB8QFjAA&amp;url=http%3A%2F%2Fgoogle-styleguide.googlecode.com%2Fsvn%2Ftrunk%2Fcpplint%2Fcpplint.py&amp;ei=Ii6pVO_bK8mAUZSVgSg&amp;usg=AFQjCNGnSkFFrrX3TIA0XxI1TIaQVKTGxw&amp;sig2=blEaRr0yiDS-Eh8vRmUDJQ&amp;bvm=bv.82001339,d.d24">Cpplint</a></p>
+<p>je to Python script</p>
+<blockquote>
+<div><ul class="simple">
+<li>pokial by bol problem spustat, mozem to riesit ja</li>
+</ul>
+</div></blockquote>
+<div class="section" id="ako-pouzivat-v-qtcreatore-windows">
+<h2>ako pouzivat v QTCreatore (Windows)<a class="headerlink" href="#ako-pouzivat-v-qtcreatore-windows" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Stiahni a nainstaluj python (napr. verziu <a class="reference external" href="https://www.python.org/downloads/">2.7</a>)</li>
+<li>Ako administratorspusti prikaz: pip install cpplint</li>
+<li>Najdi lokaciu kde sa to nainstalovalo. Pravdepodobne: c:/Python27/Scripts/cpplint.exe
+V cpplint.bat (root adresar projektu) zmen set cpplint_path= ../cpplint.exe  na celu cestu ku cpplint.exe</li>
+<li>Spusti QTCreator</li>
+<li>Projects -&gt; Build &amp; Run -&gt; Build</li>
+<li>V Build Settings -&gt; Edit Build configuration klikni Add -&gt; clone selected a zadaj “cpplint”</li>
+<li>V Build steps rozklikni Details a v Targets oznac “cpplint”. Ak su oznacene aj ine targety, tak ich je potrebne odznacit(Vysledok: Make: jom.exe cpplint).</li>
+<li>Klikni na kladivko v lavom dolnom rohu (Build).</li>
+<li>Vystupom je subor cpplint-report.txt v podadresari _build</li>
+</ol>
+</div>
+<div class="section" id="ako-pouzivat-linux">
+<h2>ako pouzivat (Linux)<a class="headerlink" href="#ako-pouzivat-linux" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>pouzite testy su nastavene v CPPLINT.cfg</p>
+<p>dostupne testy sa vypisu: cpplint.py –filter=</p>
+<dl class="docutils">
+<dt>spustit v include adresari:</dt>
+<dd>cpplint.py Aruco/* Core/* Data/* Importer/* Layout/* Math/* Network/* Network/executors/*  OpenCV/* QOpenCV/* Speech/* Viewer/* Clustering/* Clustering/Figures/* Fglove/* Kinect/*  Kinect/RansacSurface/*  Manager/* Model/* OsgQtBrowser/* QOSG/* Util/*   2&gt;&amp;1 | tee report-include.txt</dd>
+<dt>spustit v src adresari:</dt>
+<dd>cpplint.py Aruco/* Core/* Data/* Importer/* Layout/* Math/* Network/* Network/executors/*  OpenCV/* QOpenCV/* Speech/* Viewer/* Clustering/* Clustering/Figures/* Fglove/* Kinect/*  Kinect/RansacSurface/*  Manager/* Model/* OsgQtBrowser/* QOSG/* Util/*   2&gt;&amp;1 | tee report-src.txt</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="poznamky-k-reportom">
+<h2>poznamky k reportom<a class="headerlink" href="#poznamky-k-reportom" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>!!! ak je nieco nejasne, treba sa opytat !!!</p>
+<dl class="docutils">
+<dt>ignorovat hlasky pre externy kod:</dt>
+<dd><p class="first">noiseutils,
+qtcolorpicker</p>
+<p class="last">ciastocne pre cameramanipulator, QGraphicsViewAdapter</p>
+</dd>
+</dl>
+</div></blockquote>
+<div class="section" id="dolezite-hlasky-typu">
+<h3>dolezite hlasky typu:<a class="headerlink" href="#dolezite-hlasky-typu" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><blockquote>
+<div><p>Constructors callable with one argument should be marked explicit</p>
+<blockquote>
+<div><ul class="simple">
+<li>nastudovat, asi staci pridat keyword explicit</li>
+</ul>
+</div></blockquote>
+<p>Is this a non-const reference? If so, make const or use a pointer</p>
+<blockquote>
+<div><ul class="simple">
+<li>nastudovat (ci to nieje false-positive)</li>
+</ul>
+</div></blockquote>
+<p>Use int16/int64/etc, rather than the C type long</p>
+<blockquote>
+<div><ul class="simple">
+<li>nastudovat</li>
+</ul>
+</div></blockquote>
+<p>Do not use namespace using-directives.</p>
+<blockquote>
+<div><ul class="simple">
+<li>odstranit “using namemspace” (okrem externeho/cudieho kodu )</li>
+</ul>
+</div></blockquote>
+<p>Consider using rand_r(…) instead of rand(…) for improved thread safety.</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="first docutils">
+<dt>kedze mame vlakna, asi by bolo vhodne. vid.:</dt>
+<dd><a class="reference external" href="https://stackoverflow.com/questions/3973665/how-do-i-use-rand-r-and-how-do-i-use-it-in-a-thread-safe-way">https://stackoverflow.com/questions/3973665/how-do-i-use-rand-r-and-how-do-i-use-it-in-a-thread-safe-way</a></dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<p>Are you taking an address of a cast?  This is dangerous: could be a temp var.  Take the address before doing the cast, rather than after</p>
+<blockquote>
+<div>!!! indikuje vazny problem !!!</div></blockquote>
+</div></blockquote>
+<p>flase-positive:</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>Clustering/Figures/Cube.h:28:  Add #include &lt;algorithm&gt; for transform  [build/include_what_you_use] [4]</dt>
+<dd>Cube ma metodu tranform -&gt; netreba include</dd>
+</dl>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="ostatne-hlasky">
+<h3>ostatne hlasky:<a class="headerlink" href="#ostatne-hlasky" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>treba skontrolovat - a mali by sa opravit (resp. uz som ich opravil ;-)</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="codereview.html" class="btn btn-neutral float-right" title="CodeReview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="cppcheck.html" class="btn btn-neutral" title="CppCheck" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

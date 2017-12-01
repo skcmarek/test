@@ -1,0 +1,675 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Inštalačný návod (VC10) &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre používateľov" href="users.html"/>
+        <link rel="next" title="Používateľská príručka pre 3D Softviz" href="user_guide.html"/>
+        <link rel="prev" title="Install guide pre Windows Subsystem for Linux (WSL)" href="install_guide_wsl.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="users.html">Pre používateľov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html">Big picture a sumarizácia features nástroja 3DSoftviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#uvod">Úvod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#architektura-systemu">Architektúra systému</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#pripady-pouzitia">Prípady použitia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc12.html">Inštalačný návod (VC12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_linux.html">Návod pre Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_macos.html">Install guide pre macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_wsl.html">Install guide pre Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Inštalačný návod (VC10)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="install_guide_changelog.html">Changelog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="install_guide_errors.html">Časté problémy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#navod-pre-windows">Návod pre Windows</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#potrebny-softver">Potrebný softvér</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#postup-instalacie">Postup inštalácie</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#rozsirenie-3dsoftviz-o-kinect">Rozšírenie 3DSoftviz o Kinect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nastavenie-debuggera-v-qtcreator">Nastavenie debuggera v QtCreator</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html">Používateľská príručka pre 3D Softviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vuzix_leap.html">Používateľská príručka pre Vuzix a Leap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Pre vývojárov</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="users.html">Pre používateľov</a> &raquo;</li>
+        
+      <li>Inštalačný návod (VC10)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/install_guide_vc10.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instalacny-navod-vc10">
+<span id="ref-install-guide-vc10"></span><h1>Inštalačný návod (VC10)<a class="headerlink" href="#instalacny-navod-vc10" title="Permalink to this headline">¶</a></h1>
+<p>v1.5 (17. 11. 2015)</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install_guide_changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install_guide_errors.html">Časté problémy</a></li>
+</ul>
+</div>
+<div class="section" id="navod-pre-windows">
+<h2>Návod pre Windows<a class="headerlink" href="#navod-pre-windows" title="Permalink to this headline">¶</a></h2>
+<p>Tento návod bol úspešne otestovaný na operačných systémoch Windows 7, 8, 8.1, 10.</p>
+<div class="section" id="potrebny-softver">
+<h3>Potrebný softvér<a class="headerlink" href="#potrebny-softver" title="Permalink to this headline">¶</a></h3>
+<p>Na inštaláciu potrebujeme klonovať projekt <a class="reference external" href="https://github.com/dominikhorniak/RealityNotFound">3DSoftViz</a> (Tím č.4 klonuje z <a class="reference external" href="https://github.com/cimox/3dsoftviz">/cimox/3dsoftviz</a>) z Githubu a stiahnuť nasledovné:</p>
+<blockquote>
+<div><ul class="simple">
+<li>CMake <a class="reference external" href="https://cmake.org/download/">(v3.5.0)</a></li>
+<li>OpenSceneGraph <em>(jeden z nasledujúcich)</em><ul>
+<li>OpenSceneGraph <a class="reference external" href="https://github.com/openscenegraph/OpenSceneGraph/tree/OpenSceneGraph-3.4">(source)</a> - iba zdrojové súbory -&gt; treba buildnúť (cca 40-50min)</li>
+<li>OpenSceneGraph <a class="reference external" href="https://mega.nz/#!cIpy2TZQ!4k29x33yVvQDJRXT8B1J_3F-L1t30B3A2Z-uoQF9OeU">(v3.4.0)</a> - buildnuté (17.10.2015)</li>
+<li>OpenSceneGraph <a class="reference external" href="https://drive.google.com/folderview?id=0B_DYSHDPz1SnZXoyNzhEZWJ6M00&amp;usp=sharing&amp;tid=0Bx3FU7Baa_8pZHI3NmxrRGdwVEE#list">(v3.2.1)</a></li>
+</ul>
+</li>
+<li>Kinect for Windows <a class="reference external" href="https://www.microsoft.com/en-us/download/details.aspx?id=40278">SDK 1.8</a></li>
+<li>Microsoft VisualStudio 2010 <a class="reference external" href="https://www.microsoft.com/en-us/download/details.aspx?id=23691">SP1</a> <strong>(okrem Express edition!)</strong></li>
+<li>Qt <a class="reference external" href="http://ftp.fau.de/qtproject/archive/qt/4.8/4.8.5/qt-win-opensource-4.8.5-vs2010.exe">(v4.8.5)</a></li>
+<li>QtCreator <a class="reference external" href="http://ftp.fau.de/qtproject/official_releases/qtcreator/3.6/3.6.1/qt-creator-opensource-windows-x86-3.6.1.exe">(v3.6.1)</a></li>
+<li>OpenCV <a class="reference external" href="https://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.4.10/opencv-2.4.10.exe/download">(v2.4.10)</a></li>
+<li>Boost <a class="reference external" href="https://sourceforge.net/projects/boost/files/boost-binaries/1.57.0/boost_1_57_0-msvc-10.0-32.exe/download">(v1.57.0)</a></li>
+<li><a class="reference external" href="http://www.rapidee.com/en/download">RapidEE</a> - program na prácu s premennými prostredia</li>
+<li>Inštalácia knižnice 3rd party dependencies <a class="reference external" href="https://drive.google.com/folderview?id=0B_DYSHDPz1SnR1h6ZWc3dTA5ZjA&amp;usp=sharing&amp;tid=0Bx3FU7Baa_8pZHI3NmxrRGdwVEE">VC10</a></li>
+<li><a class="reference external" href="https://drive.google.com/open?id=0B_DYSHDPz1SndC1yWkZBUUlzZTQ">OpenNI2</a></li>
+<li><a class="reference external" href="https://drive.google.com/open?id=0B_DYSHDPz1SnWThlV3laenpGb0E">NiTE2</a></li>
+<li>Debugging Tools for Windows<ul>
+<li>WinDbg - <a class="reference external" href="http://download.microsoft.com/download/B/0/C/B0C80BA3-8AD6-4958-810B-6882485230B5/standalonesdk/sdksetup.exe">Win 8.1</a></li>
+<li>WinDbg - <a class="reference external" href="http://download.microsoft.com/download/E/1/F/E1F1E61E-F3C6-4420-A916-FB7C47FBC89E/standalonesdk/sdksetup.exe">Win 10</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="https://drive.google.com/open?id=0B3covCFoz_c0allNNjhFcGhuV1k">FreeGlut</a></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="postup-instalacie">
+<h3>Postup inštalácie<a class="headerlink" href="#postup-instalacie" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Nainštalovať CMake. (Cesta je v dokumente označená ako <em>%CMAKE_DIR%</em>)</p>
+</li>
+<li><p class="first">Nainštalovať Qt (<em>%QT_DIR%</em>)</p>
+</li>
+<li><p class="first">Nainštalovať QtCreator do zložky Qt</p>
+</li>
+<li><p class="first">Vytvoriť zložku OpenSceneGraph (<em>%OSG_DIR%</em>) a <em>%OSG_DIR%</em>/ThirdParty</p>
+</li>
+<li><p class="first">Rozbaliť 3rd Party Knižnice (VC10) do <em>%OSG_DIR%</em>/ThirdParty/</p>
+</li>
+<li><p class="first">Rozbaliť FreeGlut do <em>%OSG_DIR%</em>/ThirdParty/VC10/x86</p>
+</li>
+<li><p class="first">V prípade stiahnutia zbuildovaných súborov OSG (mega.nz)</p>
+<ol class="arabic simple">
+<li>Rozbaliť zložky build a install do <em>%OSG_DIR%</em></li>
+<li>Vynechať nasledujúci krok.</li>
+</ol>
+</li>
+<li><p class="first">V prípade stiahnutia iba zdrojových súborov OSG (oficiálna stránka)</p>
+<ol class="arabic">
+<li><p class="first">Rozbaliť OSG_3.4 do <em>%OSG_DIR%</em></p>
+</li>
+<li><p class="first">Vytvoriť zložku build a install v <em>%OSG_DIR%</em></p>
+</li>
+<li><p class="first">Premenovať súbory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">OSG_DIR</span><span class="o">%/</span><span class="n">ThirdParty</span><span class="o">/</span><span class="n">VC10</span><span class="o">/</span><span class="n">x86</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">GL</span><span class="o">/</span><span class="n">glut</span><span class="o">.</span><span class="n">h</span>  <span class="o">&gt;</span> <span class="o">../</span><span class="n">glut</span><span class="o">.</span><span class="n">h</span><span class="o">.</span><span class="n">bak</span>
+<span class="o">%</span><span class="n">OSG_DIR</span><span class="o">%/</span><span class="n">ThirdParty</span><span class="o">/</span><span class="n">VC10</span><span class="o">/</span><span class="n">x86</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">glut32</span><span class="o">.</span><span class="n">lib</span>     <span class="o">&gt;</span> <span class="o">../</span><span class="n">glut32</span><span class="o">.</span><span class="n">lib</span><span class="o">.</span><span class="n">bak</span>
+<span class="o">%</span><span class="n">OSG_DIR</span><span class="o">%/</span><span class="n">ThirdParty</span><span class="o">/</span><span class="n">VC10</span><span class="o">/</span><span class="n">x86</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">glut32D</span><span class="o">.</span><span class="n">lib</span>    <span class="o">&gt;</span> <span class="o">../</span><span class="n">glut32D</span><span class="o">.</span><span class="n">lib</span><span class="o">.</span><span class="n">bak</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Spustiť CMake (cmake-gui.exe)</p>
+<ol class="arabic simple">
+<li>source code &gt; <em>%OSG_DIR%</em>/OSG_3.4</li>
+<li>binaries &gt; <em>%OSG_DIR%</em>/build</li>
+<li>stlačiť Configure (VS2010 kompilátor)</li>
+<li>stlačiť Generate<ul>
+<li>ak došlo k erroru: File &gt; Delete Cache a skúsiť znovu</li>
+</ul>
+</li>
+</ol>
+<div class="figure align-center" id="id1">
+<img alt="_images/CMAKE_BUILD_OSG.png" src="_images/CMAKE_BUILD_OSG.png" />
+<p class="caption"><span class="caption-text">CMake pre OSG</span></p>
+</div>
+</li>
+<li><p class="first">Nájsť súbor OpenSceneGraph.sln v <em>%OSG_DIR%</em>/build</p>
+</li>
+<li><p class="first">Otvoriť súbor vo VS2010</p>
+</li>
+<li><p class="first">Nastaviť Solution Configuration na Debug</p>
+</li>
+<li><p class="first">Nájsť projekt ALL_BUILD &gt; pravý klik &gt; build</p>
+</li>
+<li><p class="first">Po skončení nájsť projekt INSTALL &gt; pravý klik &gt; build</p>
+</li>
+<li><p class="first">Nastaviť Solution Configuration na Release</p>
+</li>
+<li><p class="first">Nájsť projekt ALL_BUILD &gt; pravý klik &gt; build</p>
+</li>
+<li><p class="first">Po skončení nájsť projekt INSTALL &gt; pravý klik &gt; build</p>
+</li>
+<li><p class="first">Presunúť nainštalované súbory (default c:/Program Files (x86)/OpenSceneGraph) do <em>%OSG_DIR%</em>/install</p>
+</li>
+</ol>
+</li>
+<li><p class="first">Rozbaliť FreeGlut do <em>%OSG_DIR%</em>/ThirdParty/VC10/x86/ (prepísať súbory)</p>
+</li>
+<li><p class="first">Nainštalovať OpenCV (<em>%OPENCV_DIR%</em>)</p>
+</li>
+<li><p class="first">Rozbaliť Boost (<em>%BOOST_DIR%</em>)</p>
+<p>Ideálne je mať všetko na spoločnom mieste kvôli prehľadnosti, napr.</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<img alt="_images/SW_FOLDERS.png" src="_images/SW_FOLDERS.png" />
+<p class="caption"><span class="caption-text">Nainštalovaný SW</span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Nainštalovať a otvoriť RapidEE, v ktorom sa vykonajú tieto zmeny:</p>
+<ol class="arabic">
+<li><p class="first">do PATH pridať premenné:</p>
+<ol class="arabic simple">
+<li><em>%CMAKE_DIR%</em>/bin</li>
+<li><em>%QT_DIR%</em>/bin</li>
+<li><em>%QT_DIR%</em>/Qtcreator/bin</li>
+<li><em>%OSG_DIR%</em>/build/bin</li>
+<li><em>%OSG_DIR%</em>/ThirdParty/VC10/x86/bin</li>
+<li><em>%OPENCV_DIR%</em>/build/x86/vc10/bin</li>
+</ol>
+<div class="figure align-center" id="id3">
+<img alt="_images/PATH_VAR.png" src="_images/PATH_VAR.png" />
+<p class="caption"><span class="caption-text">PATH premenná</span></p>
+</div>
+</li>
+<li><p class="first">Vytvoriť premennú CMAKE_INCLUDE_PATH a pridať:</p>
+<ol class="arabic simple">
+<li><em>%OSG_DIR%</em>/install/include</li>
+<li><em>%OSG_DIR%</em>/ThirdParty/VC10/x86/include</li>
+<li><em>%OPENCV_DIR%</em>/build/include</li>
+</ol>
+<div class="figure align-center" id="id4">
+<img alt="_images/CMAKE_INCLUDE_PATH_VAR.png" src="_images/CMAKE_INCLUDE_PATH_VAR.png" />
+<p class="caption"><span class="caption-text">CMAKE_INCLUDE_PATH premenná</span></p>
+</div>
+</li>
+<li><p class="first">Vytvoriť premennú CMAKE_LIBRARY_PATH a pridať:</p>
+<ol class="arabic simple">
+<li><em>%OSG_DIR%</em>/build/lib</li>
+<li><em>%OSG_DIR%</em>/install/lib</li>
+<li><em>%OSG_DIR%</em>/ThirdParty/VC10/x86/lib</li>
+<li><em>%OPENCV_DIR%</em>/build/x86/vc10/lib</li>
+</ol>
+<div class="figure align-center" id="id5">
+<img alt="_images/CMAKE_LIBRARY_PATH_VAR.png" src="_images/CMAKE_LIBRARY_PATH_VAR.png" />
+<p class="caption"><span class="caption-text">CMAKE_LIBRARY_PATH premenná</span></p>
+</div>
+</li>
+<li><p class="first">Vytvoriť premennú BOOST_INCLUDEDIR a pridať: <em>%BOOST_DIR%</em>/boost</p>
+</li>
+<li><p class="first">Vytvoriť premennú BOOST_LIBRARYDIR a pridať: <em>%BOOST_DIR%</em>/libs</p>
+</li>
+<li><p class="first">Vytvoriť premennú BOOST_ROOT a pridať: <em>%BOOST_DIR%</em></p>
+<div class="figure align-center" id="id6">
+<img alt="_images/BOOST_VAR.png" src="_images/BOOST_VAR.png" />
+<p class="caption"><span class="caption-text">BOOST premmené</span></p>
+</div>
+</li>
+<li><p class="first">Vytvoriť premennú OPENCV_DIR a pridať: <em>%OPENCV_DIR%</em>/build</p>
+<div class="figure align-center" id="id7">
+<img alt="_images/OPENCV_DIR_VAR.png" src="_images/OPENCV_DIR_VAR.png" />
+<p class="caption"><span class="caption-text">OPENCV_DIR premenná</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Naklónovať projekt 3DSoftViz cez git shell (<em>%3DSoftViz%</em>)</p>
+</li>
+<li><p class="first">Vytvoriť v priečinku <em>%3DSoftViz%</em> priečinky _build a _install</p>
+</li>
+<li><p class="first">Spustiť QtCreator. Tools &gt; Options… &gt; Build and Run:</p>
+<ol class="arabic">
+<li><p class="first">záložka CMake – zadať cestu <em>%CMAKE_DIR%</em>/bin/cmake.exe</p>
+</li>
+<li><p class="first">záložka Compilers – ak existuje VS2010 tak sú autodetected</p>
+</li>
+<li><p class="first">záložka Qt Versions – zadať cestu <em>%QT_DIR%</em>/bin/qmake.exe</p>
+</li>
+<li><p class="first">záložka Kits – vytvoriť nový a vybrať hodnoty nasledovne:</p>
+<div class="figure align-center" id="id8">
+<img alt="_images/QTC_OPTIONS_KITS.png" src="_images/QTC_OPTIONS_KITS.png" />
+<p class="caption"><span class="caption-text">QtC Kits nastavenia</span></p>
+</div>
+</li>
+<li><p class="first">záložka General – nastaviť default build directory: <em>%3DSoftViz%</em>/_build</p>
+</li>
+<li><p class="first">Potvrdiť – OK</p>
+</li>
+</ol>
+</li>
+<li><p class="first">File &gt; Open File or Project… &gt; vybrať CMakeLists.txt z <em>%3DSoftViz%</em></p>
+</li>
+<li><p class="first">Zadať do poľa Arguments jeden z nasledujúcich prepínačov:</p>
+<ul class="simple">
+<li>-DCMAKE_BUILD_TYPE=Debug</li>
+<li>-DCMAKE_BUILD_TYPE=Release</li>
+</ul>
+</li>
+<li><p class="first">Vybrať z nastavený generátor – NMake Generator (názov kitu)</p>
+<blockquote>
+<div><p>(Chyba: Generátor nebol nájdený <a class="reference internal" href="install_guide_errors.html#ref-install-guide-errors"><span class="std std-ref">&lt;riešenie&gt;</span></a>)</p>
+</div></blockquote>
+</li>
+<li><p class="first">Stlačiť Run CMake</p>
+<blockquote>
+<div><div class="figure align-center" id="id9">
+<img alt="_images/QTC_CMAKE_WIZARD.png" src="_images/QTC_CMAKE_WIZARD.png" />
+<p class="caption"><span class="caption-text">QtC CMake wizard</span></p>
+</div>
+<p>(Chyba: Chýbajúce moduly <a class="reference internal" href="install_guide_errors.html#ref-install-guide-errors"><span class="std std-ref">&lt;riešenie&gt;</span></a>)</p>
+<p>(Chyba: Cesta nebola nájdená <a class="reference internal" href="install_guide_errors.html#ref-install-guide-errors"><span class="std std-ref">&lt;riešenie&gt;</span></a>)</p>
+</div></blockquote>
+</li>
+<li><p class="first">Ukončiť – Finish</p>
+</li>
+<li><p class="first">Vybrať Projects &gt; Build &amp; Run &gt; Build, v časti Edit build configuration kliknúť na Add &gt; Clone selected, nazvať napr. „unity“</p>
+</li>
+<li><p class="first">Prejsť na vytvorený build config. „unity“, v časti Build Steps otvoriť Details a zaškrtnúť pri build step <em>jom.exe</em> možnosť <em>install_unity</em></p>
+<blockquote>
+<div><div class="figure align-center" id="id10">
+<img alt="_images/QTC_PROJECT_BUILD.png" src="_images/QTC_PROJECT_BUILD.png" />
+<p class="caption"><span class="caption-text">QtC build project</span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Skontrolovať nastavenie build config – unity</p>
+<blockquote>
+<div><div class="figure align-center" id="id11">
+<img alt="_images/QTC_PROJECT_BUILD_CONFIG.png" src="_images/QTC_PROJECT_BUILD_CONFIG.png" />
+<p class="caption"><span class="caption-text">QtC build config</span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Stačiť Build (kladivko vľavo dole)</p>
+</li>
+<li><p class="first">Po úspešnom zbuildovaní vybrať Projects &gt; Build &amp; Run &gt; Run, v časti Run pridať Add &gt; Custom Executable a nastaviť:</p>
+<ol class="arabic">
+<li><p class="first">executable: <em>%3DSoftViz%</em>/_install/bin/3DSoftviz.exe</p>
+</li>
+<li><p class="first">working directory: <em>%3DSoftViz%</em>/_install/bin/</p>
+<div class="figure align-center" id="id12">
+<img alt="_images/QTC_PROJECT_RUN.png" src="_images/QTC_PROJECT_RUN.png" />
+<p class="caption"><span class="caption-text">QtC run project</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Skontrolovať nastavenie run config – zadaná cesta</p>
+<blockquote>
+<div><div class="figure align-center" id="id13">
+<img alt="_images/QTC_PROJECT_RUN_CONFIG.png" src="_images/QTC_PROJECT_RUN_CONFIG.png" />
+<p class="caption"><span class="caption-text">QtC run config</span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Spustiť program pomocou zeleného tlačidla Run</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="rozsirenie-3dsoftviz-o-kinect">
+<h2>Rozšírenie 3DSoftviz o Kinect<a class="headerlink" href="#rozsirenie-3dsoftviz-o-kinect" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Nainštalovať Kinect for Windows</p>
+</li>
+<li><p class="first">Skontrolovať v RapidEE či sa vytvorila premenná <em>%KINECTSDK10_DIR%</em></p>
+<blockquote>
+<div><div class="figure align-center" id="id14">
+<img alt="_images/KINECTSDK_VAR.png" src="_images/KINECTSDK_VAR.png" />
+<p class="caption"><span class="caption-text">KINECTSDK10_DIR premenná</span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Nainštalovať OpenNI2 (OpenNI-Windows-x86-2.2.msi)</p>
+<ul class="simple">
+<li><strong>x86! – inak sa môžu vyskytnúť problémy s linkovaním</strong></li>
+</ul>
+</li>
+<li><p class="first">Skontrolovať v RapidEE či sa vytvorili premenné:</p>
+<ol class="arabic">
+<li><p class="first"><em>%OPENNI2_INCLUDE%</em></p>
+</li>
+<li><p class="first"><em>%OPENNI2_LIB%</em></p>
+</li>
+<li><p class="first"><em>%OPENNI2_REDIST%</em></p>
+</li>
+<li><p class="first"><em>%OPENNI2_ROOT%</em></p>
+<div class="figure align-center" id="id15">
+<img alt="_images/OPENNI2_VAR.png" src="_images/OPENNI2_VAR.png" />
+<p class="caption"><span class="caption-text">NITE2 premenné</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Nainštalovať NiTE2 (NiTE-Windows-x86-2.2.msi)</p>
+<ul class="simple">
+<li><strong>x86! – inak sa môžu vyskytnúť problémy s linkovaním</strong></li>
+</ul>
+</li>
+<li><p class="first">Skontrolovať v RapidEE či sa vytvorili premenné:</p>
+<ol class="arabic">
+<li><p class="first"><em>%NITE2_INCLUDE%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_LIB%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_REDIST%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_ROOT%</em></p>
+<div class="figure align-center" id="id16">
+<img alt="_images/NITE2_VAR.png" src="_images/NITE2_VAR.png" />
+<p class="caption"><span class="caption-text">OPENNI2 premenné</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Pridať do premennej CMAKE_INCLUDE_PATH:</p>
+<ol class="arabic">
+<li><p class="first"><em>%OPENNI2_INCLUDE%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_INCLUDE%</em></p>
+<div class="figure align-center" id="id17">
+<img alt="_images/CMAKE_INCLUDE_PATH_FULL_VAR.png" src="_images/CMAKE_INCLUDE_PATH_FULL_VAR.png" />
+<p class="caption"><span class="caption-text">OPENNI2 premenné</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Pridať do premennej CMAKE_LIBRARY_PATH:</p>
+<ol class="arabic">
+<li><p class="first"><em>%OPENNI2_ROOT%</em>/Driver</p>
+</li>
+<li><p class="first"><em>%OPENNI2_REDIST%</em></p>
+</li>
+<li><p class="first"><em>%OPENNI2_REDIST%</em>/OpenNI2/Drivers</p>
+</li>
+<li><p class="first"><em>%OPENNI2_LIB%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_ROOT%</em>/Samples/Bin/OpenNI2/Drivers</p>
+</li>
+<li><p class="first"><em>%NITE2_LIB%</em></p>
+<div class="figure align-center" id="id18">
+<img alt="_images/CMAKE_LIBRARY_PATH_FULL_VAR.png" src="_images/CMAKE_LIBRARY_PATH_FULL_VAR.png" />
+<p class="caption"><span class="caption-text">OPENNI2 premenné</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Pridať do premennej PATH:</p>
+<ol class="arabic">
+<li><p class="first"><em>%OPENNI2_REDIST%</em>/OpenNI2/Drivers</p>
+</li>
+<li><p class="first"><em>%OPENNI2_REDIST%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_REDIST%</em></p>
+</li>
+<li><p class="first"><em>%NITE2_ROOT%</em>/Samples/Bin</p>
+<div class="figure align-center" id="id19">
+<img alt="_images/PATH_FULL_VAR.png" src="_images/PATH_FULL_VAR.png" />
+<p class="caption"><span class="caption-text">OPENNI2 premenné</span></p>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Spustiť CMake a skontrolovať vo výpise:</p>
+<ol class="arabic simple">
+<li>OpenNI2 FOUND</li>
+<li>NITE2 FOUND</li>
+<li>KINECTSDK FOUND</li>
+</ol>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="nastavenie-debuggera-v-qtcreator">
+<h2>Nastavenie debuggera v QtCreator<a class="headerlink" href="#nastavenie-debuggera-v-qtcreator" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Nainštalovať WinDbg</p>
+</li>
+<li><p class="first">Skontrolovať v QtCreator Tools &gt; Options &gt; Build &amp; Run &gt; záložka Debuggers či sú autodetected</p>
+<blockquote>
+<div><div class="figure align-center" id="id20">
+<img alt="_images/QTC_OPTIONS_DEBUGGERS.png" src="_images/QTC_OPTIONS_DEBUGGERS.png" />
+<p class="caption"><span class="caption-text">QtC debugger nastavenia</span></p>
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Pridať do QtCreator Tools &gt; Options &gt; Build &amp; Run &gt; záložka Kits pre vytvorený profil položku Debugger (x86)</p>
+</li>
+<li><p class="first">Spustiť CMake (-DCMAKE_BUILD_TYPE=Debug)</p>
+</li>
+<li><p class="first">Zvoliť možnosť Debug (vľavo dole medzi Run a Build)</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="user_guide.html" class="btn btn-neutral float-right" title="Používateľská príručka pre 3D Softviz" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_guide_wsl.html" class="btn btn-neutral" title="Install guide pre Windows Subsystem for Linux (WSL)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

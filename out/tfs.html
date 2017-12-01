@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>TFS metodika &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Metodiky" href="methodology.html"/>
+        <link rel="next" title="Logovanie s knižnicou Easylogging++" href="logging.html"/>
+        <link rel="prev" title="Sphinx dokumentacia" href="sphinx.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Akceptačné testovanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logbenchlib.html">Logovacie a benchmarkingové knižnice</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="methodology.html">Metodiky</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cpp-howto.html">Ako programovat v C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cppcheck.html">CppCheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpplint.html">Cpplint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codereview.html">CodeReview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astyle.html">AStyle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="plantuml.html">Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gitflow.html">Gitflow metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphinx.html">Sphinx dokumentacia</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">TFS metodika</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#vseobecna-metodika-na-manazment-uloh-v-time">Všeobecná metodika na manažment úloh v tíme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">TFS metodika</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="logging.html">Logovanie s knižnicou Easylogging++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="igloo.html">Metodika na písanie BDD testov</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+          <li><a href="methodology.html">Metodiky</a> &raquo;</li>
+        
+      <li>TFS metodika</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tfs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tfs-metodika">
+<h1>TFS metodika<a class="headerlink" href="#tfs-metodika" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="vseobecna-metodika-na-manazment-uloh-v-time">
+<h2>Všeobecná metodika na manažment úloh v tíme<a class="headerlink" href="#vseobecna-metodika-na-manazment-uloh-v-time" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pridanie-novej-ulohy">
+<h3>Pridanie novej úlohy<a class="headerlink" href="#pridanie-novej-ulohy" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Pri každej úlohe je potrebné uviesť opis. Opis si k úlohe zadáva ten, kto si ju vyberie.</li>
+<li>Uviesť odhadovaný čas dokončenia.</li>
+<li>Opis musí byť podrobný, aby každému členovi bolo jasné, čo ma vykonať po pridelení úlohy.</li>
+</ul>
+</div>
+<div class="section" id="rozdelovanie-uloh">
+<h3>Rozdeľovanie úloh<a class="headerlink" href="#rozdelovanie-uloh" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Každý si vyberie (potiahne) úlohu/úlohy, ktorá/é majú najvyššiu prioritu.</li>
+<li>Ak ostanú nepridelené úlohy, študentský vedúci tímu pridelí členom zvyšné úlohy.</li>
+</ul>
+</div>
+<div class="section" id="kedy-je-uloha-hotova">
+<h3>Kedy je úloha hotová<a class="headerlink" href="#kedy-je-uloha-hotova" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Dokumentácia: Keď je  znovu vygenerovaná.</li>
+<li>Kód: Potrebné spraviť code review a vykonať pull request do vetvy, ktorá sa bude mergovať.</li>
+<li>Testy: Keď je spravený report z testu.</li>
+<li>Zápisnica: Keď je nahratá vo formáte pdf na stránke tímu.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>TFS metodika<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Adresa TFS: <a class="reference external" href="https://tfs.fiit.stuba.sk:8443/tfs/">https://tfs.fiit.stuba.sk:8443/tfs/</a>  (Potrebné sa lognúť 2x)</li>
+<li>Projekt: Just18</li>
+</ul>
+<div class="section" id="pridavanie-uloh">
+<h3>Pridávanie úloh<a class="headerlink" href="#pridavanie-uloh" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Úlohy podobného charakteru priradíme do spoločného backlog itemu.</li>
+<li>Pri pridávaní úlohy sa automaticky nastaví stav ‘To Do’.</li>
+<li>V prípade objavenia chyby, je potrebné vytvoriť novú úlohu typu Bug (Chyba)</li>
+<li>Odhadovaný čas dávame na backlog itemy, rovnako ako aj Acceptance Criteria (predpripravený field pri rozkliknutí backlog itemu v TFS).</li>
+<li>POZOR: TFS podporuje estimáciu času v IBA v hodinách.</li>
+</ul>
+<p>Úlohy (tasky) sa môžu nachádzať v troch stavoch:
+* To Do
+* In Progress
+* Done
+Nesplnené úlohy, ktoré sa nestihli dokončiť v danom šprinte, presunieme do nasledujúceho šprintu.</p>
+<img alt="_images/task_next_sprint.png" src="_images/task_next_sprint.png" />
+</div>
+<div class="section" id="vytvaranie-exportov-z-tfs">
+<h3>Vytváranie exportov z TFS<a class="headerlink" href="#vytvaranie-exportov-z-tfs" title="Permalink to this headline">¶</a></h3>
+<p>Navod na stranke: <a class="reference external" href="https://msdn.microsoft.com/en-us/library/dd286627(v=vs.110).aspx">https://msdn.microsoft.com/en-us/library/dd286627(v=vs.110).aspx</a></p>
+<p>URL: <a class="reference external" href="https://tfs.fiit.stuba.sk:8443/tfs/">https://tfs.fiit.stuba.sk:8443/tfs/</a></p>
+<p>Login: ako do AIS-u</p>
+<p>Pred prvým exportom je potrebné si vytvoriť query, ktoré vráti stav úloh v danom šprinte.
+Návod na vytvorenie quory:</p>
+<img alt="_images/create_query_tfs.png" src="_images/create_query_tfs.png" />
+</div>
+<div class="section" id="excel">
+<h3>Excel<a class="headerlink" href="#excel" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>V hlavnom menu vybrať záložku TEAM (mala by byť vpravo hore).</li>
+<li>Klik na New List ( umiestnená na ľavo pod záložkou File/Súbor).</li>
+<li>Vybrať novo vytvorené query:</li>
+</ul>
+<img alt="_images/select_query.png" src="_images/select_query.png" />
+<ul class="simple">
+<li>Hotovo</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="logging.html" class="btn btn-neutral float-right" title="Logovanie s knižnicou Easylogging++" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="sphinx.html" class="btn btn-neutral" title="Sphinx dokumentacia" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

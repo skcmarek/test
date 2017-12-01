@@ -1,0 +1,952 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Akceptačné testovanie &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre vývojárov" href="developers.html"/>
+        <link rel="next" title="Logovacie a benchmarkingové knižnice" href="logbenchlib.html"/>
+        <link rel="prev" title="GitLua" href="gitlua.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Akceptačné testovanie</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-graph">Záložka GRAPH</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-constraints">Záložka CONSTRAINTS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-clustering">Záložka CLUSTERING</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-connections">Záložka CONNECTIONS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zalozka-more-features">Záložka MORE FEATURES</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hlavne-okno">Hlavné okno</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="logbenchlib.html">Logovacie a benchmarkingové knižnice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="methodology.html">Metodiky</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+      <li>Akceptačné testovanie</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/test.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="akceptacne-testovanie">
+<h1>Akceptačné testovanie<a class="headerlink" href="#akceptacne-testovanie" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="zalozka-graph">
+<h2>Záložka GRAPH<a class="headerlink" href="#zalozka-graph" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="25%" />
+<col width="29%" />
+<col width="7%" />
+<col width="39%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="1000000000000044000000184655EF87_png" src="_images/1000000000000044000000184655EF87.png" /></td>
+<td>manipulácia s prvkami grafu, nič neoznačuje</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004400000018D5CD6FF3_png" src="_images/100000000000004400000018D5CD6FF3.png" /></td>
+<td>výber jedného prvku grafu</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000004400000018B2CDE863_png" src="_images/100000000000004400000018B2CDE863.png" /></td>
+<td>výber viacerých prvkov grafu</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004400000019684B8DCF_png" src="_images/100000000000004400000019684B8DCF.png" /></td>
+<td>centrovanie pohľadu vzhľadom na vybraný
+prvok grafu</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000890000004AE3E8DCFB_png" src="_images/10000000000000890000004AE3E8DCFB.png" /></td>
+<td>typ výberu prvku grafu: všetko, iba uzly, iba
+hrany, klastre</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000440000001877C11C86_png" src="_images/10000000000000440000001877C11C86.png" /></td>
+<td>pridanie meta uzla do grafu</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000440000001864F64134_png" src="_images/10000000000000440000001864F64134.png" /></td>
+<td>odstránenie vybraných meta uzlov z&nbsp;grafu</td>
+<td>nefunkčné</td>
+<td>meta uzol sa nedá odstrániť zo scény</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004400000018BEE97164_png" src="_images/100000000000004400000018BEE97164.png" /></td>
+<td>ukotvenie vybraných uzlov na aktuálnej pozícii</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000004400000018670A8433_png" src="_images/100000000000004400000018670A8433.png" /></td>
+<td>uvoľnenie ukotvených uzlov</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000088000000177AD5BFE4_png" src="_images/1000000000000088000000177AD5BFE4.png" /></td>
+<td>pridanie hrany medzi dvomi vybranými uzlami</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000880000001723BA0C72_png" src="_images/10000000000000880000001723BA0C72.png" /></td>
+<td>pridanie uzla</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000890000001632A2B069_png" src="_images/10000000000000890000001632A2B069.png" /></td>
+<td>odstránenie vybraných elementov (uzly alebo
+hrany)</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000880000001888E20502_png" src="_images/10000000000000880000001888E20502.png" /></td>
+<td>výber farby pre zafarbenie uzla</td>
+<td>nefunkčné</td>
+<td>nedá sa vybrať iná farba ako čierna</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000008700000017C7ACB39F_png" src="_images/100000000000008700000017C7ACB39F.png" /></td>
+<td>aplikovanie vybranej farby na vybraný uzol</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008800000017CE90E148_png" src="_images/100000000000008800000017CE90E148.png" /></td>
+<td>aplikovanie textového označenia na vybrané
+uzly podľa textu</td>
+<td>nefunkčné</td>
+<td>uzol sa po aplikovaní zmenší a táto akcia sa nedá vrátiť späť</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000880000001840A22079_png" src="_images/10000000000000880000001840A22079.png" /></td>
+<td>zapnutie/vypnutie zobrazovania popisov
+uzlov a&nbsp;hrán</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000880000001866413B76_png" src="_images/10000000000000880000001866413B76.png" /></td>
+<td>spustenie animovania rozmiestňovania uzlov
+grafu</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000088000000195BC88C75_png" src="_images/1000000000000088000000195BC88C75.png" /></td>
+<td>zastavenie animovania rozmiestňovania uzlov</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008A0000001A6E8D8B4E_png" src="_images/100000000000008A0000001A6E8D8B4E.png" /></td>
+<td>zmena odpudivých síl pôsobiacich medzi uzlami</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zalozka-constraints">
+<h2>Záložka CONSTRAINTS<a class="headerlink" href="#zalozka-constraints" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="37%" />
+<col width="8%" />
+<col width="26%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="1000000000000044000000182D96668B_png" src="_images/1000000000000044000000182D96668B.png" /></td>
+<td>aplikovanie priestorového ohraničenia: povrch gule</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004200000018BF35D45D_png" src="_images/100000000000004200000018BF35D45D.png" /></td>
+<td>aplikovanie priestorového ohraničenia: obsah
+gule</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000440000001852E1B1B5_png" src="_images/10000000000000440000001852E1B1B5.png" /></td>
+<td>aplikovanie priestorového ohraničenia: rovina</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004200000018784AA636_png" src="_images/100000000000004200000018784AA636.png" /></td>
+<td>aplikovanie priestorového ohraničenia:
+prienik gule a&nbsp;roviny</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="1000000000000044000000181DFF8FF2_png" src="_images/1000000000000044000000181DFF8FF2.png" /></td>
+<td>aplikovanie priestorového ohraničenia:
+kružnica</td>
+<td>nefunkčné</td>
+<td>nedá sa zmeniť priemer kružnice, po
+pokuse zmeniť priemer, nefunguje
+odstránenie ohraničenia</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004200000018CB8B89FC_png" src="_images/100000000000004200000018CB8B89FC.png" /></td>
+<td>aplikovanie priestorového ohraničenia: kužeľ</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000004400000018BE4E0D99_png" src="_images/100000000000004400000018BE4E0D99.png" /></td>
+<td>aplikovanie priestorového ohraničenia:
+kužeľový strom</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004200000018B79C9F77_png" src="_images/100000000000004200000018B79C9F77.png" /></td>
+<td>odstránenie vybraných priestorových
+ohraničení</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008D00000015E609BD30_png" src="_images/100000000000008D00000015E609BD30.png" /></td>
+<td>aplikovanie priestorového ohraničenia:
+povrch valca</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000008D00000015853A8A1A_png" src="_images/100000000000008D00000015853A8A1A.png" /></td>
+<td>aplikovanie priestorového ohraničenia:
+povrch kužeľa</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000004400000018F5649D01_png" src="_images/100000000000004400000018F5649D01.png" /></td>
+<td>aplikovanie radiálneho rozmiestnenia na
+označené uzly</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000042000000182A4D4919_png" src="_images/1000000000000042000000182A4D4919.png" /></td>
+<td>výber módu vykreslenia radiálneho
+rozmiestnenia (drôtený, plný)</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008C000000189BBE6071_png" src="_images/100000000000008C000000189BBE6071.png" /></td>
+<td>nastavenie módu 2D/3D radiálneho
+rozmiestnenia</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000008F00000088EB205EFA_png" src="_images/100000000000008F00000088EB205EFA.png" /></td>
+<td><ol class="first last arabic simple">
+<li>nastavenie veľkosti rozmiestnenia</li>
+<li>nastavenie priehľadnosti rozmiestnenia</li>
+<li>nastavenie počtu zobrazených gúľ</li>
+<li>nastavenie faktora zosilnenia odpudivých
+síl v radiálnom rozmiestnení pre uzly, ktoré
+nie sú na rovnakej vrstve</li>
+<li>nastavenie faktora zosilnenia odpudivých
+síl v radiálnom rozmiestnení pre uzly, ktoré
+sú na rovnakej vrstve</li>
+</ol>
+</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000520000000F5DEEA0DC_png" src="_images/10000000000000520000000F5DEEA0DC.png" /></td>
+<td>prepínač medzi normálnou a vertigo kamerou</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000880000001733C6ADD9_png" src="_images/10000000000000880000001733C6ADD9.png" /></td>
+<td>zvýšenie vzájomnej vzdialenosti medzi rovinami</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008800000017471CE907_png" src="_images/100000000000008800000017471CE907.png" /></td>
+<td>zníženie vzájomnej vzdialenosti medzi rovinami</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000088000000171E96B1AF_png" src="_images/1000000000000088000000171E96B1AF.png" /></td>
+<td>pridanie dvoch paralelných rovín</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008800000017A7D548F8_png" src="_images/100000000000008800000017A7D548F8.png" /></td>
+<td>odobranie dvoch paralelných rovín</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000008A00000016BC7855D7_png" src="_images/100000000000008A00000016BC7855D7.png" /></td>
+<td>zmena násobiča odpudivých síl medzi uzlami</td>
+<td>nefunkčné</td>
+<td>zmenou hodnoty sa uzly nehýbu</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008800000018F6B763F7_png" src="_images/100000000000008800000018F6B763F7.png" /></td>
+<td>vypnutie všetkých predchádzajúcich
+obmedzení</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zalozka-clustering">
+<h2>Záložka CLUSTERING<a class="headerlink" href="#zalozka-clustering" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="40%" />
+<col width="9%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="1000000000000044000000180B304C64_png" src="_images/1000000000000044000000180B304C64.png" /></td>
+<td>zlúčenie vybraných uzlov</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004400000018C96589BC_png" src="_images/100000000000004400000018C96589BC.png" /></td>
+<td>zrušenie zlúčenia vybraných uzlov</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008A000000163484BBE0_png" src="_images/100000000000008A000000163484BBE0.png" /></td>
+<td>definovanie algoritmu, ktorým sa bude
+zhlukovať graf</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000006700000016A5463953_png" src="_images/100000000000006700000016A5463953.png" /></td>
+<td>nastavenie počtu rekurzií pre vybraný
+algoritmus</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000880000001757645A7E_png" src="_images/10000000000000880000001757645A7E.png" /></td>
+<td>spustenie zhlukovania nad aktívnym grafom</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="160317233911" src="_images/160317233911.png" /></td>
+<td><ol class="first last arabic simple">
+<li>spustenie algoritmu na zväzovanie hrán</li>
+<li>pozastavenie algoritmu na zväzovanie hrán</li>
+<li>úplne zastavenie algoritmu na zväzovanie hrán a zobrazenie
+pôvodného grafu</li>
+<li>vstupné pole na zadanie konštanty, určujúcej silu akou sú
+hrany k sebe počas zväzovacieho algoritmu priťahované</li>
+</ol>
+</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Po použití funkcie zhlukovania, sa odkryjú nasledujúce možnosti:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="40%" />
+<col width="9%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="100000000000003E00000031AFCE8E36_png" src="_images/100000000000003E00000031AFCE8E36.png" /></td>
+<td><p class="first">auto - automatická priehľadnosť - mení sa na
+základe vzdialenosti zhlukov od kamery</p>
+<p class="last">selected - priehľadnosť označeného zhluku</p>
+</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000900000001DB1EF6F8A_png" src="_images/10000000000000900000001DB1EF6F8A.png" /></td>
+<td>pomocou posuvníka sa mení priehľadnosť len označených zhlukov</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008E000000470C14C2FC_png" src="_images/100000000000008E000000470C14C2FC.png" /></td>
+<td>posúvaním sa mení prahová hodnota, pri
+ktorej sa menia tvary zhlukov - spodné číslo
+udáva, koľko uzlov obsahuje daný zhluk</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Pri označení konkrétneho zhluku sa odkryjú nasledujúce možnosti:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="40%" />
+<col width="9%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="100000000000008800000017D9BD7C96_png" src="_images/100000000000008800000017D9BD7C96.png" /></td>
+<td>kliknutím zmeníme označený zhluk na
+obmedzovač</td>
+<td>nefunkčné</td>
+<td>pri pokuse o otestovanie program
+spadne</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000880000001702681B5B_png" src="_images/10000000000000880000001702681B5B.png" /></td>
+<td>znovurozmiestnenie uzlov v priestore po tom,
+ako sa nalepia na hranu – obmedzovača</td>
+<td>neotestované</td>
+<td>nie je možné otestovať kvôli problému
+s Restrict</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008A00000022C0AD7A66_png" src="_images/100000000000008A00000022C0AD7A66.png" /></td>
+<td>upravenie odpudivej sily medzi uzlami v
+označenom zhluku - čím je hodnota väčšia,
+tým budú uzly ďalej od seba</td>
+<td>neotestované</td>
+<td>nie je možné otestovať kvôli problému
+s Restrict</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zalozka-connections">
+<h2>Záložka CONNECTIONS<a class="headerlink" href="#zalozka-connections" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="49%" />
+<col width="7%" />
+<col width="11%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="100000000000008A00000022787850BE_png" src="_images/100000000000008A00000022787850BE.png" /></td>
+<td>meno, pod ktorým bude používateľ vystupovať v kolaborácii</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000008800000017419C7E57_png" src="_images/100000000000008800000017419C7E57.png" /></td>
+<td>spustenie/zastavenie servera</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008A000000220A716225_png" src="_images/100000000000008A000000220A716225.png" /></td>
+<td>IP adresa servera</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000008800000017EFA4E2A5_png" src="_images/100000000000008800000017EFA4E2A5.png" /></td>
+<td>pripojenie(odpojenie) ku(od) kolaborácii</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008C00000046A4D57BEB_png" src="_images/100000000000008C00000046A4D57BEB.png" /></td>
+<td>zoznam používateľov</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000003600000036926EBFDC_png" src="_images/100000000000003600000036926EBFDC.png" /></td>
+<td><p class="first">Spy - získa používateľ pohľad iného používateľa</p>
+<p>Center - nasmeruje pohľad používateľa tak,
+aby v jeho strede bol iný používateľ</p>
+<p class="last">Shout - iným používateľom sa v scéne zobrazí
+pri vašom mene ikona znázorňujúca, že sa
+pokúšate upútať pozornosť</p>
+</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000890000002BADD2CCC3_png" src="_images/10000000000000890000002BADD2CCC3.png" /></td>
+<td>nastavenie veľkosti avatarov v scéne</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="zalozka-more-features">
+<h2>Záložka MORE FEATURES<a class="headerlink" href="#zalozka-more-features" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="35%" />
+<col width="10%" />
+<col width="25%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="100002010000006600000011B4DE8DC1_png" src="_images/100002010000006600000011B4DE8DC1.png" /></td>
+<td>ak je zaškrtnuté, kamera nasmerovaná
+a graf sa pohybuje na základe pohybu
+tváre, značky alebo rúk, inak sa na
+základe týchto akcií rotuje samotný graf</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100002010000006700000012BDB07758_png" src="_images/100002010000006700000012BDB07758.png" /></td>
+<td>povoľuje použitie kamery</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008800000017AA0AED20_png" src="_images/100000000000008800000017AA0AED20.png" /></td>
+<td>otvorenie okna pre prácu s&nbsp;kamerou</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000088000000170254F076_png" src="_images/1000000000000088000000170254F076.png" /></td>
+<td>otvorenie okna pre prácu s hlasovým ovládaním</td>
+<td>neotestované</td>
+<td>Speech je momentálne vylúčený z
+projektu</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000008800000017413B8E7C_png" src="_images/100000000000008800000017413B8E7C.png" /></td>
+<td>zapnutie ovládania pomocou Leap Senzoru</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<p>Možnosti okna otvoreného po kliknutí na vyššie uvedené tlačidlá:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="37%" />
+<col width="11%" />
+<col width="22%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="100000000000006B00000042C3F83F22_png" src="_images/100000000000006B00000042C3F83F22.png" /></td>
+<td>prispôsobenie l’avej strany okna pre
+ovládanie funkcionality rozpoznávania tváre</td>
+<td>funkčné</td>
+<td>treba pri zapinani
+zaskrtnut Camera rotation
+a Camera enabled</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000065000000173A10D902_png" src="_images/1000000000000065000000173A10D902.png" /></td>
+<td>zvolenie kamerového zariadenia a následným
+potvrdením objavenie záberu z&nbsp;kamery s
+rozpoznávaním tváre (graf sa pohybuje na
+základe pohybu tváre)</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000007000000041B635012D_png" src="_images/100000000000007000000041B635012D.png" /></td>
+<td>prispôsobenie l’avej strany okna pre ovládanie
+funkcionality rozpoznávania značky</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000000000000650000001796A2AF29_png" src="_images/10000000000000650000001796A2AF29.png" /></td>
+<td>zvolenie kamerového zariadenia a následným
+potvrdením objavenie záberu z kamery
+určenej pre rozpoznávanie značky a graf sa
+začne otáčať a pohybovať so značkou</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000004F0000000FEC4CF6B8_png" src="_images/100000000000004F0000000FEC4CF6B8.png" /></td>
+<td>nastavenie aktuálne snímanie ako pozadie
+pre graf</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000201000000630000002915638961_png" src="_images/10000201000000630000002915638961.png" /></td>
+<td>prepínanie medzi pohybom podľa značky ako
+keby sa kamera pozerala na používateľa a
+naopak</td>
+<td>neotestované</td>
+<td>nepodarilo sa vykonať test</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000006500000017979E34AC_png" src="_images/100000000000006500000017979E34AC.png" /></td>
+<td>nastavenie korekčných parametrov</td>
+<td>neotestované</td>
+<td>nepodarilo sa vykonať test</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000065000000177C91CF62_png" src="_images/1000000000000065000000177C91CF62.png" /></td>
+<td>zmena spôsobu použitia značky v prípade, že
+používateľ má k dispozícii len jednu značku</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000003D0000000F5820E584_png" src="_images/100000000000003D0000000F5820E584.png" /></td>
+<td>vypnutie/zapnutie zobrazenia videa</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="1000000000000088000000179195620E_png" src="_images/1000000000000088000000179195620E.png" /></td>
+<td>zapnutie detekcie Kinectom</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="100000000000005E00000017B1B1298F_png" src="_images/100000000000005E00000017B1B1298F.png" /></td>
+<td>zachytenie kádra s následnou možnosťou dať
+ho na pozadie</td>
+<td>neotestované</td>
+<td>nepodarilo sa vykonať test</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000005E0000000F773D7D28_png" src="_images/100000000000005E0000000F773D7D28.png" /></td>
+<td>prepínanie medzi detekovaním ruky pre
+manipuláciu grafu alebo kamery v podobe
+rotovania a medzi detekovaním ruky pre
+funkciu “klik” (pohyb ruky do hĺbky, nie
+vertikálne alebo horizontálne)</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000580000000F1A585785_png" src="_images/10000000000000580000000F1A585785.png" /></td>
+<td>vypnutie možnosti približovania</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000004700000029E932FAEF_png" src="_images/100000000000004700000029E932FAEF.png" /></td>
+<td>nastavenie práce s&nbsp;arucom (manipulácia grafu
+pomocou značiek)</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hlavne-okno">
+<h2>Hlavné okno<a class="headerlink" href="#hlavne-okno" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="31%" />
+<col width="9%" />
+<col width="34%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Zoznam ovládacích prvkov</th>
+<th class="head">Opis funkcionality</th>
+<th class="head">Status</th>
+<th class="head">Opis závady</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><img alt="100000000000006B00000016E3D0F655_png" src="_images/100000000000006B00000016E3D0F655.png" /></td>
+<td>filtrovanie hrán</td>
+<td>funkčné</td>
+<td>nefunguje na operačnom systéme Windows</td>
+</tr>
+<tr class="row-odd"><td><img alt="100000000000007F00000016BB966294_png" src="_images/100000000000007F00000016BB966294.png" /></td>
+<td>filtrovanie uzlov</td>
+<td>funkčné</td>
+<td>nefunguje na operačnom systéme Windows</td>
+</tr>
+<tr class="row-even"><td><img alt="10000000000000AD00000017929650C3_png" src="_images/10000000000000AD00000017929650C3.png" /></td>
+<td>zobrazí dialóg pre výber súborov; po vybratí
+vykreslí do poľa pod tlačidlom graf volaní
+funkcií týchto súborov</td>
+<td>funkčné</td>
+<td>nefunguje na operačnom systéme Windows</td>
+</tr>
+<tr class="row-odd"><td><img alt="10000201000000AD00000018AD24406D_png" src="_images/10000201000000AD00000018AD24406D.png" /></td>
+<td>prepínanie medzi zobrazovaním jedného
+prehliadača pre každý uzol a zobrazovaním
+jedného prehliadača pre všetky vyznačené uzly</td>
+<td>funkčné</td>
+<td>nefunguje na operačnom systéme Windows</td>
+</tr>
+<tr class="row-even"><td>File – načítanie grafu zo súboru</td>
+<td>načítanie grafu do scény</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>File - načítanie grafu z&nbsp;databázy</td>
+<td>načítanie grafu do scény</td>
+<td>neotestované</td>
+<td>nie sú k dispozícii grafy v databázovej podobe</td>
+</tr>
+<tr class="row-even"><td>File - uloženie grafu</td>
+<td>uloží graf</td>
+<td>neotestované</td>
+<td>možnosť bola implementovaná pre databázové riešenie</td>
+</tr>
+<tr class="row-odd"><td>File - uloženie layout</td>
+<td>ponúkne možnosť nazvať layout a uloži ho</td>
+<td>neotestované</td>
+<td>možnosť bola implementovaná pre databázové riešenie</td>
+</tr>
+<tr class="row-even"><td>File - ukončenie aplikácie</td>
+<td>ukončí aplikáciu</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Settings</td>
+<td>nastavenia jednotlivých parametrov aplikácie</td>
+<td>funkčné</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="logbenchlib.html" class="btn btn-neutral float-right" title="Logovacie a benchmarkingové knižnice" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gitlua.html" class="btn btn-neutral" title="GitLua" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

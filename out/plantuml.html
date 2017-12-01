@@ -1,0 +1,429 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Metodiky" href="methodology.html"/>
+        <link rel="next" title="Gitflow metodika" href="gitflow.html"/>
+        <link rel="prev" title="AStyle" href="astyle.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Akceptačné testovanie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logbenchlib.html">Logovacie a benchmarkingové knižnice</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="methodology.html">Metodiky</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="cpp-howto.html">Ako programovat v C++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cppcheck.html">CppCheck</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cpplint.html">Cpplint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="codereview.html">CodeReview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="astyle.html">AStyle</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#plantuml">PlantUML</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pravidla-pre-tvorbu-suborov">Pravidlá pre tvorbu súborov</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uzitocne-prikazy-a-postupy">Užitočné príkazy a postupy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pravidla-pre-suborovu-strukturu">Pravidlá pre súborovú štruktúru</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="gitflow.html">Gitflow metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sphinx.html">Sphinx dokumentacia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tfs.html">TFS metodika</a></li>
+<li class="toctree-l3"><a class="reference internal" href="logging.html">Logovanie s knižnicou Easylogging++</a></li>
+<li class="toctree-l3"><a class="reference internal" href="igloo.html">Metodika na písanie BDD testov</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="vagrant.html">Vagrant</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+          <li><a href="methodology.html">Metodiky</a> &raquo;</li>
+        
+      <li>Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/plantuml.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metodika-tvorby-a-udrzby-uml-diagramov-prostrednictvom-plantuml">
+<h1>Metodika tvorby a údržby UML diagramov prostredníctvom PlantUML<a class="headerlink" href="#metodika-tvorby-a-udrzby-uml-diagramov-prostrednictvom-plantuml" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="plantuml">
+<h2>PlantUML<a class="headerlink" href="#plantuml" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://plantuml.sourceforge.net/index.html">PlantUML</a> je jednoduchý
+program na tvorbu UML diagramov prostredníctvom ich textového opisu. K
+samotnému programu prislúcha aj rozsiahla
+<a class="reference external" href="http://plantuml.com/PlantUML_Language_Reference_Guide.pdf">dokumentácia</a>.</p>
+<p>PlantUML je voľne dostupný na
+<a class="reference external" href="http://plantuml.sourceforge.net/download.html">stiahnutie</a> z
+oficiálnej stránky, prípadne je možné na otestovanie použiť aj
+jednoduchú <a class="reference external" href="http://www.plantuml.com/plantuml/">web aplikáciu</a>.</p>
+<p>Pre plnohodnotné využitie je potrebné mať taktiež nainštalovaný
+<a class="reference external" href="http://plantuml.sourceforge.net/graphvizdot%20html">Graphviz</a>.</p>
+<p>Tiež ponúka možnosť
+<a class="reference external" href="http://plantuml.sourceforge.net/running.html">integrácie</a> s
+viacerými textovými editormi a wiki stránkami.</p>
+</div>
+<div class="section" id="pravidla-pre-tvorbu-suborov">
+<h2>Pravidlá pre tvorbu súborov<a class="headerlink" href="#pravidla-pre-tvorbu-suborov" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Každý diagram sa nachádza v samostatnom textovom súbore (koncovka
+.txt, resp .wsd pri použití integrácie so sublime text).</li>
+<li>Vygenerovaný diagram má identický názov ako prislúchajúci textový
+súbor (koncovka .png).</li>
+<li>Názvy súborov sú po anglicky.</li>
+</ol>
+</div>
+<div class="section" id="uzitocne-prikazy-a-postupy">
+<h2>Užitočné príkazy a postupy<a class="headerlink" href="#uzitocne-prikazy-a-postupy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="odstranenie-duplicity-pomocou-preprocesoru">
+<h3>Odstránenie duplicity pomocou Preprocesoru<a class="headerlink" href="#odstranenie-duplicity-pomocou-preprocesoru" title="Permalink to this headline">¶</a></h3>
+<p>Pri písaní diagramov, ktoré obsahujú komplikované vzťahy medzi entitami
+môžeme naraziť na situáciu, kde budeme veľa krát za sebou písať ten istý
+názov triedy alebo metódy. S využitím makier preprocessoru môžeme túto
+duplicitu ľahko odstrániť.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@startuml</span>
+<span class="s1">&#39;Bez proprocesoru</span>
+
+<span class="n">package</span> <span class="s2">&quot;class Filter representation&quot;</span> <span class="p">{</span>
+    <span class="k">class</span> <span class="nc">ObjectStructure</span>
+    <span class="k">class</span> <span class="nc">Element</span> <span class="p">{</span>
+        <span class="o">+</span><span class="p">{</span><span class="n">abstract</span><span class="p">}</span><span class="n">register</span><span class="p">(</span><span class="n">Visitor</span> <span class="n">v</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">class</span> <span class="nc">Mapper</span> <span class="p">{</span>
+        <span class="o">+</span><span class="n">register</span><span class="p">(</span><span class="n">Filter</span> <span class="n">f</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">class</span> <span class="nc">Klient</span>
+    <span class="k">class</span> <span class="nc">Visitor</span> <span class="p">{</span>
+        <span class="o">+</span><span class="p">{</span><span class="n">abstract</span><span class="p">}</span><span class="n">visitMapper</span><span class="p">(</span><span class="n">Mapper</span> <span class="n">m</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">class</span> <span class="nc">Filter</span> <span class="p">{</span>
+        <span class="o">+</span><span class="n">visitMapper</span><span class="p">(</span><span class="n">Mapper</span> <span class="n">m</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="n">ObjectStructure</span> <span class="o">-</span><span class="n">down</span><span class="o">-&gt;</span> <span class="n">Element</span>
+    <span class="n">Mapper</span> <span class="o">-</span><span class="n">up</span><span class="o">-|&gt;</span> <span class="n">Element</span>
+
+    <span class="n">ObjectStructure</span> <span class="o">&lt;-</span><span class="n">left</span><span class="o">-</span> <span class="n">Klient</span>
+
+    <span class="n">Klient</span> <span class="o">-</span><span class="n">down</span><span class="o">-&gt;</span> <span class="n">Visitor</span>
+    <span class="n">Filter</span> <span class="o">-</span><span class="n">up</span><span class="o">-|&gt;</span> <span class="n">Visitor</span>
+<span class="p">}</span>
+<span class="nd">@enduml</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>@startuml
+&#39;S preprocesorom
+!define o(x) ObjectStructure
+!define e(x) Element
+!define m(x) Mapper
+!define k(x) Klient
+!define v(x) Visitor
+!define f(x) Filter
+
+package &quot;class Filter representation&quot; {
+    class o()
+    class e() {
+        +{abstract}register(v(x) v)
+    }
+    class m() {
+        +register(Filter f)
+    }
+    class k()
+    class v() {
+        +{abstract}visitMapper(m(x) m)
+    }
+    class f() {
+        +visitMapper(m(x) m)
+    }
+
+    o() -down-&gt; e()
+    m() -up-|&gt; e()
+
+    o() &lt;-left- k()
+
+    k() -down-&gt; v()
+    f() -up-|&gt; v()
+}
+@enduml
+</pre></div>
+</div>
+<p><em>V oboch prípadoch bude výsledok nasledovný:</em></p>
+<img alt="_images/plantuml1.png" src="_images/plantuml1.png" />
+<p>V druhom prípade
+sa rozhodne menej napíšeme a máme možnosť meniť použité názvy tried na
+jednom mieste namiesto toho aby sme ich museli meniť všade. Stojí za
+poznámku, že každé definované makro musí mať parameter (v našom prípade
+x, z ktorého ajtak nečítame). Viac o Preprocesore na
+<a class="reference external" href="http://plantuml.sourceforge.net/preprocessing.html">tejto</a> stránke.</p>
+</div>
+<div class="section" id="pouzitie-aliasov-v-sekvencnom-diagrame">
+<h3>Použitie aliasov v sekvenčnom diagrame<a class="headerlink" href="#pouzitie-aliasov-v-sekvencnom-diagrame" title="Permalink to this headline">¶</a></h3>
+<p>V sekvenčných diagramoch odporúčame pri definovaní volaní medzi
+objektami používať aliasy (skratky). Ich princíp je analogický s
+predchádzajúcim makrom avšak sú ešte o niečo prehladnejšie. Aliasy nie
+sú však podporované v class diagrame.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@startuml</span>
+<span class="n">participant</span> <span class="n">Client</span> <span class="k">as</span> <span class="n">c</span>
+<span class="n">participant</span> <span class="n">Server</span> <span class="k">as</span> <span class="n">s</span>
+
+<span class="n">title</span> <span class="n">sd</span> <span class="n">Basic</span> <span class="n">Server</span> <span class="n">call</span>
+
+<span class="n">activate</span> <span class="n">c</span>
+    <span class="n">c</span> <span class="o">-&gt;</span> <span class="n">s</span><span class="p">:</span> <span class="n">sendMessage</span><span class="p">(</span><span class="s2">&quot;You are awesome!&quot;</span><span class="p">)</span>
+    <span class="n">activate</span> <span class="n">s</span>
+        <span class="n">s</span> <span class="o">--&gt;</span> <span class="n">c</span><span class="p">:</span> <span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;ok&quot;</span>
+    <span class="n">deactivate</span> <span class="n">s</span>
+<span class="n">deactivate</span> <span class="n">c</span>
+
+<span class="nd">@enduml</span>
+</pre></div>
+</div>
+<p><em>Výsledok:</em></p>
+<img alt="_images/plantuml2.png" src="_images/plantuml2.png" />
+<p>Užitočnosť týchto skratiek (a makier) pochopiteľne narastá s
+narastajúcou komplexitou daného diagramu.</p>
+</div>
+</div>
+<div class="section" id="pravidla-pre-suborovu-strukturu">
+<h2>Pravidlá pre súborovú štruktúru<a class="headerlink" href="#pravidla-pre-suborovu-strukturu" title="Permalink to this headline">¶</a></h2>
+<p>Samotné UML diagramy je potrebné rozdeliť do prehľadnej súborovej
+štruktúry:</p>
+<ul class="simple">
+<li>projekt (názov projektu, napr. 3dsoftviz)<ul>
+<li>doc (inštalačná dokumentácia, vygenerovaná dokumentácia atď.)</li>
+<li>uml<ul>
+<li>structural<ul>
+<li>class diagrams (korešpondujúce s reálnym kódom)</li>
+<li>component diagrams</li>
+</ul>
+</li>
+<li>behavioral<ul>
+<li>activity diagrams</li>
+<li>use-case diagrams</li>
+<li>sequence diagrams</li>
+<li>state diagrams</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="gitflow.html" class="btn btn-neutral float-right" title="Gitflow metodika" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="astyle.html" class="btn btn-neutral" title="AStyle" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

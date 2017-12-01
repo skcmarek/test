@@ -1,0 +1,389 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Install guide pre Windows Subsystem for Linux (WSL) &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre používateľov" href="users.html"/>
+        <link rel="next" title="Inštalačný návod (VC10)" href="install_guide_vc10.html"/>
+        <link rel="prev" title="Install guide pre macOS" href="install_guide_macos.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="users.html">Pre používateľov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc12.html">Inštalačný návod (VC12)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_linux.html">Návod pre Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_macos.html">Install guide pre macOS</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Install guide pre Windows Subsystem for Linux (WSL)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#instalacia-wsl">Inštalácia WSL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instalacia-projektu">Inštalácia projektu</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc10.html">Inštalačný návod (VC10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html">Používateľská príručka pre 3D Softviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vuzix_leap.html">Používateľská príručka pre Vuzix a Leap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Pre vývojárov</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="users.html">Pre používateľov</a> &raquo;</li>
+        
+      <li>Install guide pre Windows Subsystem for Linux (WSL)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/install_guide_wsl.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-guide-pre-windows-subsystem-for-linux-wsl">
+<h1>Install guide pre Windows Subsystem for Linux (WSL)<a class="headerlink" href="#install-guide-pre-windows-subsystem-for-linux-wsl" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="instalacia-wsl">
+<h2>Inštalácia WSL<a class="headerlink" href="#instalacia-wsl" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Inštálácia WSL je možná len pre 64-bitovú verziu Windows 10 a build 1607+</p>
+</div>
+<ol class="arabic simple">
+<li>Spustiť <strong>PowerShell</strong> ako <strong>administrátor</strong> a spustiť nasledujúci príkaz:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Enable</span><span class="o">-</span><span class="n">WindowsOptionalFeature</span> <span class="o">-</span><span class="n">Online</span> <span class="o">-</span><span class="n">FeatureName</span> <span class="n">Microsoft</span><span class="o">-</span><span class="n">Windows</span><span class="o">-</span><span class="n">Subsystem</span><span class="o">-</span><span class="n">Linux</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Spustiť <strong>CMD</strong> a spustiť:</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bash</span>
+</pre></div>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first">Potvrdiť inštaláciu a nastaviť meno a heslo</p>
+</li>
+<li><p class="first">WSL nepodporuje defaultne GUI aplikácie, no ich obraz sa dá exportovať na XServer:</p>
+<blockquote>
+<div><ul class="simple">
+<li>nainštalovať Xlaunch (alebo iný)</li>
+<li>v nastaveniach nastaviť port výstupného displeja</li>
+<li>v terminály zadať export DISPLAY=:<em>port</em> (ten ktorý sme nastavili v Xlaunch)</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="instalacia-projektu">
+<h2>Inštalácia projektu<a class="headerlink" href="#instalacia-projektu" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Nainštalovať prostredníctvom Synaptic nasledujúce programy</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Git</strong> - git</li>
+<li><strong>OpenSceneGraph</strong> - libopenscenegraph-dev</li>
+<li><strong>Boost</strong> - libboost-all-dev</li>
+<li><strong>Lua</strong> - liblua5.1-0-dev</li>
+<li><strong>OpenCV</strong> - libopencv-dev</li>
+<li><strong>FreeGlut3</strong></li>
+<li>freeglut3</li>
+<li>freeglut3-dev</li>
+<li><dl class="first docutils">
+<dt><strong>CMake</strong> <a class="reference external" href="https://cmake.org/files/v3.5/cmake-3.5.0.tar.gz">3.5.0</a></dt>
+<dd><ul class="first last">
+<li>inštalovať zo source files, nie Synaptic</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Nainštalovať Qt5 cez ppa (cez Synaptic je dostupná len verzia 4):</p>
+</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">add</span><span class="o">-</span><span class="n">apt</span><span class="o">-</span><span class="n">repository</span> <span class="n">ppa</span><span class="p">:</span><span class="n">beineri</span><span class="o">/</span><span class="n">opt</span><span class="o">-</span><span class="n">qt591</span><span class="o">-</span><span class="n">xenial</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span>
+<span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">qt59</span><span class="o">-</span><span class="n">meta</span><span class="o">-</span><span class="n">full</span>
+</pre></div>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first">Pre správne fungovanie je potrebné nastaviť flag pre spustiteľnosť knižníc Qt príkazom:</p>
+<blockquote>
+<div><ul class="simple">
+<li>sudo execstack -c /opt/qt59/lib/*</li>
+<li>v súčasnej verzii execstack nie je dostupný, treba ho najskôr nainštalovať</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Klonovať cez Git projekt 3dsoftvizQt</p>
+<blockquote>
+<div><ul class="simple">
+<li>git clone ** <strong>url repozitára</strong> **</li>
+<li>git submodule update –init –recursive</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Prepnúť sa do aktuálnej vetvy:</p>
+<blockquote>
+<div><ul class="simple">
+<li>git checkout <em>vetva</em></li>
+<li>git submodule update –init –recursive</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Zbuildovanie projektu</p>
+<blockquote>
+<div><ul class="simple">
+<li>Otvoriť QtCreator príkazom:</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">/./</span><span class="n">opt</span><span class="o">/</span><span class="n">qt59</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">qtcreator</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>V QtCreator File &gt;&gt; Open file or project &gt;&gt; Otvoriť CmakeList.txt v zložke 3dsoftviz</li>
+<li><dl class="first docutils">
+<dt>Vytvoriť projekt</dt>
+<dd><ul class="first last">
+<li>Ak úspešne (dá sa kliknúť na FINISH) &gt;&gt; Kliknúť FINISH</li>
+<li>Ak neúspešne – Nájsť chybu vo výpise</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Nastaviť build v QtCreator-i</p>
+<blockquote>
+<div><p>Projects &gt;&gt; Build and Run &gt;&gt; Build
+Build Settings &gt;&gt; Add &gt;&gt; Clone Selected &gt;&gt; pomenovať “unity” - automaticky prepne na unity build mode
+Build Steps &gt;&gt; Details &gt;&gt; zaškrtnúť install_unity</p>
+<p>Nastavenie počtu jadier na buildovanie projektu…
+Details &gt;&gt; Additional arguments “-jN”, kde N reprezentuje počet VIRTUÁLNYCH jadier</p>
+</div></blockquote>
+</li>
+<li><p class="first">V Tools &gt;&gt; Options &gt;&gt; Build &amp; Run &gt;&gt; QtVersions je potrebné cez <em>Add</em> pridať /opt/qt59/bin/qmake</p>
+</li>
+<li><p class="first">V Tools &gt;&gt; Options &gt;&gt; Build &amp; Run &gt;&gt; Kits je potrebné nastaviť verziu Qt5.9..</p>
+</li>
+<li><p class="first">Spustiť buildovanie</p>
+</li>
+<li><p class="first">Po buildovaní v Projects &gt;&gt; Run &gt;&gt; Add &gt;&gt; Custom Executable nastaviť</p>
+</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Executable</span><span class="p">:</span> <span class="p">{</span><span class="n">project_dir</span><span class="p">}</span><span class="o">/</span><span class="n">_install</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="mi">3</span><span class="n">DSoftviz</span>
+<span class="n">Working</span> <span class="n">directory</span><span class="p">:</span> <span class="p">{</span><span class="n">project_dir</span><span class="p">}</span><span class="o">/</span><span class="n">_install</span><span class="o">/</span><span class="nb">bin</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="12">
+<li>Spustiť projekt</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install_guide_vc10.html" class="btn btn-neutral float-right" title="Inštalačný návod (VC10)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_guide_macos.html" class="btn btn-neutral" title="Install guide pre macOS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

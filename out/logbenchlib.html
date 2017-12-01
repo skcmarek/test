@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Logovacie a benchmarkingové knižnice &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre vývojárov" href="developers.html"/>
+        <link rel="next" title="Metodiky" href="methodology.html"/>
+        <link rel="prev" title="Akceptačné testovanie" href="test.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="users.html">Pre používateľov</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="developers.html">Pre vývojárov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="uml.html">UML diagramy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Akceptačné testovanie</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Logovacie a benchmarkingové knižnice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#logovacie-kniznice">Logovacie knižnice</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#zdroje">Zdroje:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#benchmarkingove-kniznice">Benchmarkingové kniznice</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Zdroje:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="methodology.html">Metodiky</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="developers.html">Pre vývojárov</a> &raquo;</li>
+        
+      <li>Logovacie a benchmarkingové knižnice</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/logbenchlib.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="logovacie-a-benchmarkingove-kniznice">
+<h1>Logovacie a benchmarkingové knižnice<a class="headerlink" href="#logovacie-a-benchmarkingove-kniznice" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="logovacie-kniznice">
+<h2>Logovacie knižnice<a class="headerlink" href="#logovacie-kniznice" title="Permalink to this headline">¶</a></h2>
+<p>Pri použití Easylogging++:</p>
+<blockquote>
+<div><ul class="simple">
+<li>#include “easylogging++.h” len tam kde treba použiť</li>
+<li>INITIALIZE_EASYLOGGINGPP je len raz v main-e</li>
+</ul>
+</div></blockquote>
+<div class="section" id="zdroje">
+<h3>Zdroje:<a class="headerlink" href="#zdroje" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://github.com/emilk/loguru">Loguru</a></li>
+<li><a class="reference external" href="https://johnwbyrd.github.io/logog/index.html">Logog</a></li>
+<li><a class="reference external" href="https://github.com/gabime/spdlog">Spdlog</a></li>
+<li><a class="reference external" href="https://github.com/SergiusTheBest/plog">Plog</a></li>
+<li><a class="reference external" href="https://github.com/easylogging/easyloggingpp/blob/master/README.md">Easyloggingpp</a></li>
+<li><a class="reference external" href="https://bitbucket.org/KjellKod/g2log/srchttps://github.com/KjellKod/g3log">G3log</a></li>
+<li><a class="reference external" href="https://github.com/google/glog">Glog</a></li>
+<li><a class="reference external" href="http://log4cpp.sourceforge.net/">log4cpp</a></li>
+<li><a class="reference external" href="https://sourceforge.net/projects/log4cplus">log4cplus</a></li>
+<li><a class="reference external" href="http://logging.apache.org/log4cxx/index.html">log4cxx</a></li>
+<li><a class="reference external" href="http://www.boost.org/doc/libs/1_60_0/libs/log/doc/html/index.html">BOOSTlog</a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="benchmarkingove-kniznice">
+<h2>Benchmarkingové kniznice<a class="headerlink" href="#benchmarkingove-kniznice" title="Permalink to this headline">¶</a></h2>
+<p>Celero je najlepším výberom, len potrebuje C++11 compiler.</p>
+<p>Pre iné platformy ako Windows je možné použiť Hayai.</p>
+<div class="section" id="id1">
+<h3>Zdroje:<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="https://github.com/nickbruun/hayai">Hayai</a></li>
+<li><a class="reference external" href="https://github.com/DigitalInBlue/Celero">Celero</a></li>
+<li><a class="reference external" href="https://github.com/rmartinho/nonius">Nonius</a></li>
+<li><a class="reference external" href="https://github.com/google/benchmark">Googlebenchmark</a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="methodology.html" class="btn btn-neutral float-right" title="Metodiky" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="test.html" class="btn btn-neutral" title="Akceptačné testovanie" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

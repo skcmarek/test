@@ -1,0 +1,357 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Návod pre Linux &mdash; 3DSoftViz v0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="3DSoftViz v0.1 documentation" href="index.html"/>
+        <link rel="up" title="Pre používateľov" href="users.html"/>
+        <link rel="next" title="Install guide pre macOS" href="install_guide_macos.html"/>
+        <link rel="prev" title="Časté problémy" href="install_guide_errors.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> 3DSoftViz
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="users.html">Pre používateľov</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html">Big picture a sumarizácia features nástroja 3DSoftviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#uvod">Úvod</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#architektura-systemu">Architektúra systému</a></li>
+<li class="toctree-l2"><a class="reference internal" href="product-summary.html#pripady-pouzitia">Prípady použitia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc12.html">Inštalačný návod (VC12)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Návod pre Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_macos.html">Install guide pre macOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_wsl.html">Install guide pre Windows Subsystem for Linux (WSL)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install_guide_vc10.html">Inštalačný návod (VC10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html">Používateľská príručka pre 3D Softviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vuzix_leap.html">Používateľská príručka pre Vuzix a Leap</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="developers.html">Pre vývojárov</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">3DSoftViz</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="users.html">Pre používateľov</a> &raquo;</li>
+        
+      <li>Návod pre Linux</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/install_guide_linux.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="navod-pre-linux">
+<h1>Návod pre Linux<a class="headerlink" href="#navod-pre-linux" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic simple">
+<li>Cez Apt nainštalovať nasledujúce programy</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Git</strong> - git</li>
+<li><strong>OpenSceneGraph</strong> - libopenscenegraph-dev</li>
+<li><strong>Qt5</strong> - qt5*</li>
+<li><strong>Qt5WebEngine</strong> - qtwebengine5</li>
+<li><strong>QtCreator</strong> - qtcreator</li>
+<li><strong>Boost</strong> - libboost-all-dev</li>
+<li><strong>Lua</strong> - liblua5.1-0-dev</li>
+<li><strong>OpenCV</strong> - libopencv-dev</li>
+<li><strong>FreeGlut3</strong> - freeglut3-dev</li>
+<li><strong>CMake</strong> - cmake</li>
+</ul>
+</div></blockquote>
+<p><strong>Príkaz na inštaláciu</strong> : sudo apt install git,libopenscenegraph-dev,qt5*,qtwebengine5,qtcreator,libboost-all-dev,liblua5.1-0-dev,libopencv-dev,freeglut3-dev,cmake</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Názvy knižníc sú ukázané pre Ubuntu</p>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first">Klonovať cez Git projekt 3dsoftviz (AlphaReach klonuje z repozitára Cimox)</p>
+<blockquote>
+<div><ul class="simple">
+<li>git clone ** <strong>url repozitára</strong> **</li>
+<li>git submodule update –init –recursive</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Zbuildovanie projektu</p>
+</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Otvoriť QtCreator</li>
+<li>File &gt;&gt; Open file or project &gt;&gt; Otvoriť CmakeList.txt v zložke 3dsoftviz</li>
+<li>Vytvoriť projekt<ul>
+<li>Ak úspešne (dá sa kliknúť na FINISH) &gt;&gt; Kliknúť FINISH</li>
+<li>Ak neúspešne – Nájsť chybu vo výpise</li>
+</ul>
+</li>
+</ul>
+</div></blockquote>
+<ol class="arabic" start="5">
+<li><p class="first">Nastaviť build v QtCreator-i</p>
+<blockquote>
+<div><p>Projects &gt;&gt; Build and Run &gt;&gt; Build
+Build Settings &gt;&gt; Add &gt;&gt; Clone Selected &gt;&gt; pomenovať “unity” - automaticky prepne na unity build mode
+Build Steps &gt;&gt; Details &gt;&gt; zaškrtnúť install_unity</p>
+<img alt="images/build.jpg" class="align-center" src="images/build.jpg" />
+<p>Nastavenie počtu jadier na buildovanie projektu…
+Details &gt;&gt; Additional arguments “-jN”, kde N reprezentuje počet VIRTUÁLNYCH jadier</p>
+</div></blockquote>
+</li>
+<li><p class="first">Pridanie Kinectu do projectu</p>
+<blockquote>
+<div><ul class="simple">
+<li>Nainštalovať <a class="reference external" href="https://drive.google.com/drive/folders/0Bx3FU7Baa_8pdEJESGRJcU1vN1U">NiTE</a> – pridať systémové premenné</li>
+<li>Nainštalovať <a class="reference external" href="https://drive.google.com/drive/folders/0Bx3FU7Baa_8pajVqcHhnOWRJa1k">OpenNI</a> alebo cez sudo apt-get install – pridať systémové premenné</li>
+<li>Naištalovať Freenect2 - postupovať podľa &lt;<a class="reference external" href="https://github.com/OpenKinect/libfreenect2/blob/master/README">https://github.com/OpenKinect/libfreenect2/blob/master/README</a>.md#linux`_ -je potrebné aby fungoval aj OpenNI test</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Ak je potrebný prístup k knižniciam kvôli vývoju tak je potrebné nastaviť premenné FREENECT2_INCLUDE a FREENECT2_LIBRARY</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Pre použitie je nutný Kinect for XBOX</p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p>Na OSX, ak je found OpenNI2 a NiTE2, aplikacia crashne pri spustani s chybovou hlaskou:</p>
+<ul class="simple">
+<li><em>not found libNiTE2.dylib</em></li>
+<li><em>not found libOpenNI2.dylib</em></li>
+</ul>
+<p class="last">Treba tieto kniznice skopirovat z ich domovskych priecinkov (z lib alebo redist).</p>
+</div>
+<ol class="arabic simple" start="7">
+<li>Inštalácia drivera pre 3dmyš</li>
+</ol>
+<blockquote>
+<div><ul>
+<li><p class="first">Nainštalovať Motif3 pomocou Synaptic Package Manager</p>
+</li>
+<li><dl class="first docutils">
+<dt>Pre uistenie, že 3dmyš funguje, skúsiť xapp aplikáciu z drivera</dt>
+<dd><ul class="first last">
+<li><p class="first">Pre spustenie drivera (ktory musi bezat pre pouzivanie mysi) spustite prikaz</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="mi">3</span><span class="n">DxWare</span><span class="o">/</span><span class="n">daemon</span><span class="o">/</span><span class="mi">3</span><span class="n">dxsrv</span> <span class="o">-</span><span class="n">d</span> <span class="n">usb</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Pre podrobnejsie instrukcie ohladne instalacie a pouzivania drivera otvorit navod prilozeny v suboroch oficialneho drivera pre Linux “<strong>InstallationInstructions_Linux.txt</strong>”</p>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="install_guide_macos.html" class="btn btn-neutral float-right" title="Install guide pre macOS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install_guide_errors.html" class="btn btn-neutral" title="Časté problémy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, Alphareach.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
