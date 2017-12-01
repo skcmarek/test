@@ -36,7 +36,7 @@ priestore. Kameru okuliarov je možné využívať v iných moduloch
 3DSoftvizu, no zatiaľ táto funkcionalita zostáva nevyužitá.
 
 .. figure:: images/product-summary/vuzix-glasses.png
-    :scale: 50%
+    :scale: 30%
     :alt: Vuzix okuliare
     :align: center
 
@@ -68,7 +68,7 @@ aby sa neprekrývali. Ilustrácia výslednej zostavy kamier je znázornená
 na tomto obrázku (pre 3 kamery):
 
 .. figure:: images/product-summary/multi-display-view.png
-    :scale: 50%
+    :scale: 30%
     :alt: Zobrazenie pomocou viacerých monitorov
     :align: center
 
@@ -178,7 +178,7 @@ realizovaný prostredníctvom widgetov, vopred vytvorených mini aplikácii
 v Qt uspôsobených na tento účel.
 
 .. figure:: images/product-summary/user-interface.png
-    :scale: 50%
+    :scale: 30%
     :alt: Pouzivatelske rozhranie
     :align: center
 
@@ -223,7 +223,7 @@ používateľa s grafom - po kliknutí na zvolený uzol nad ním je možné
 vykonávať ďalšie operácie.
 
 .. figure:: images/product-summary/graph-visualization.png
-    :scale: 50%
+    :scale: 30%
     :alt: 3D vizualizovanie grafu
     :align: center
 
@@ -246,7 +246,7 @@ poskladané z regiónov, budov a gúľ. Vytvorenie metafory mesta je možné
 pre jazyky Java a Lua.
 
 .. figure:: images/product-summary/city-metaphor.png
-    :scale: 50%
+    :scale: 30%
     :alt: Mesto testovacieho súboru
     :align: center
 
@@ -340,7 +340,7 @@ obsahuje nasledujúce formy interakcie zhlukovania:
 -  zmena odpudivých síl uzlov vo vnútri zhlukov
    
 .. figure:: images/product-summary/clustering-use-case.png
-    :scale: 50%
+    :scale: 30%
     :alt: Pripady pouzitia zhlukovanie
     :align: center
    
@@ -376,6 +376,6 @@ metrikách vyznačených uzlov. Má nasledujúce možnosti:
 -  Umožniť filtráciu dát zobrazených vo webovom prehliadači
 
 .. figure:: images/product-summary/webview.png
-    :scale: 50%
+    :scale: 30%
     :alt: Vnoreny webovy prehliadac
     :align: center
