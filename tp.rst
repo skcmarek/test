@@ -3,7 +3,7 @@
 Zobrazenie cez stereoskopické okuliare
 ======================================
 
-Zdroj: Tímový projekt č. 18 2016/2017
+*Zdroj: Tímový projekt č. 18 2016/2017*
 
 Rozšírením projektu o stereoskopické 3D okuliare sme schopní vnímať
 grafy načítané zo súboru alebo vytvorené analýzou volaných funkcií
@@ -30,12 +30,16 @@ vzájomne posunuté a tým docielime efekt stereoskopického 3D. Zobrazenie
 scény v režime 3D je priamo podporované v OSG. V 3DSoftviz je upravená
 *src/Viewer/PickHandler.cpp*, kde sú pridané jednotlivé 3D módy.
 
-Okrem displejov je súčas- ťou kamera, ktorá sníma obraz pred
+Okrem displejov je súčasťou kamera, ktorá sníma obraz pred
 používateľom a modul ktorý sleduje aktuálnu pozíciu okuliarov v
 priestore. Kameru okuliarov je možné využívať v iných moduloch
 3DSoftvizu, no zatiaľ táto funkcionalita zostáva nevyužitá.
 
-//mozno obrazok okuliarov
+.. figure:: images/product-summary/vuzix-glasses.png
+    :scale: 50%
+    :alt: Vuzix okuliare
+    :align: center
+
 
 Okuliare 3D Vision využívajú quad buffer. Jedná sa o technológiu
 používanú v počítačovej grafike pre implementácie stereoskopického
@@ -48,10 +52,11 @@ Prepnutie na stereoskopické režim - quad buffer je spojený s už
 existujúcim riešením pre AR okuliare v triede
 *src/Viewer/PickHandler.cpp.*
 
+
 Zobrazenie pomocou viacerých monitorov
 ======================================
 
-Zdroj: Tímový projekt č. 18 2016/2017
+*Zdroj: Tímový projekt č. 18 2016/2017*
 
 Touto funkcionalitou je rozšírená prezentačná časť projektu na viacerých
 monitoroch. Zobrazenie pomocou viacerých monitorov, resp. projektorov je
@@ -62,12 +67,16 @@ od hlavnej kamery. Slave kamery sú posunuté do jedného a druhého smeru,
 aby sa neprekrývali. Ilustrácia výslednej zostavy kamier je znázornená
 na tomto obrázku (pre 3 kamery):
 
+.. figure:: images/product-summary/multi-display-view.png
+    :scale: 50%
+    :alt: Zobrazenie pomocou viacerých monitorov
+    :align: center
 
 
 Manipulácia s grafom v priestore cez Leap senzor
 ================================================
 
-Zdroj: Tímový projekt č. 9 2014/2015
+*Zdroj: Tímový projekt č. 9 2014/2015*
 
 Táto funkcionalita 3DSoftviz umožňuje v 3D priestore manipulovať
 s grafom ako alternatívne riešenie, ktoré nahradí prácu s myšou
@@ -96,7 +105,7 @@ prsta ukazuje.
 
 Rozšírená funkcionalita aplikácie vďaka zakomponovaniu Leap senzora:
 
--  Ovládanie fly modu - Ak je používateľ aplikácie v tzv. fly mode, pri
+-  **Ovládanie fly modu** - Ak je používateľ aplikácie v tzv. fly mode, pri
    stlačení tlačidla Start Leap (v záložke “More features”) pravou rukou
    mení smer natočenia kamery. Natočenie vystretej dlane doľava,
    doprava, hore alebo dole má za následok natočenie smeru kamery do
@@ -104,12 +113,12 @@ Rozšírená funkcionalita aplikácie vďaka zakomponovaniu Leap senzora:
    pohybovať v danom smere natočenia, alebo nie. V prípade, ţe všetky
    prsty na ľavej ruke sú vystreté, kamera sa hýbe, inak stojí.
 
--  Približovanie a odďaľovanie kamery - Približovanie a odďaľovanie
-   kamery sa ovláda za pomoci gesta “Circle”. Ak používateľ vystretým
+-  **Približovanie a odďaľovanie kamery** - Približovanie a odďaľovanie
+   kamery sa ovláda za pomoci gesta "Circle". Ak používateľ vystretým
    prstom opíše kružnicu kamera sa oddiali alebo priblíži podľa toho, či
    kružnica bola opísaná v smere alebo proti smeru hodinových ručičiek.
 
--  Pohyb grafu - Po stlačení tlačidla Start Leap (v záložke “More
+-  **Pohyb grafu** - Po stlačení tlačidla Start Leap (v záložke “More
    features”) je pozícia grafu namapovaná na polohu pravej ruky. Ak
    používateľ hýbe rukou, graf sa hýbe v scéne po všetkých troch
    súradniciach na základe zmeny polohy ruky.
@@ -118,7 +127,7 @@ Rozšírená funkcionalita aplikácie vďaka zakomponovaniu Leap senzora:
 Uloženie a načítanie dát z databázy
 ===================================
 
-Zdroj: Tímový projekt č. 20 2009/2010
+*Zdroj: Tímový projekt č. 20 2009/2010*
 
 Získané dáta z načítaného grafu je potrebné v aplikácii uchovávať. Na to
 sme sa rozhodli použiť relačnú databázu, ktorá nám umožňuje relatívne
@@ -140,7 +149,7 @@ Pre potreby projektu je použitý databázový server PostgreSQL.
 Ovládanie cez používateľské rozhranie
 =====================================
 
-Zdroj: Tímový projekt č. 20 2009/2010
+*Zdroj: Tímový projekt č. 20 2009/2010*
 
 Aplikácia, ktorú vytvárame má v prvom rade za úlohu poskytovať prehľadnú
 a pútavú 3D vizualizáciu v podobe grafu používateľovi. Aby nešlo o
@@ -168,14 +177,16 @@ Samotné prepojenie týchto nástrojov a prenos informácii oboma smermi je
 realizovaný prostredníctvom widgetov, vopred vytvorených mini aplikácii
 v Qt uspôsobených na tento účel.
 
-//obr pouz rozhrania
+.. figure:: images/product-summary/user-interface.png
+    :scale: 50%
+    :alt: Pouzivatelske rozhranie
+    :align: center
 
-.. d-vizualizovanie-grafu-1:
 
 3D Vizualizovanie grafu
 =======================
 
-Zdroj: Tímový projekt č. 20 2009/2010
+*Zdroj: Tímový projekt č. 20 2009/2010*
 
 Vizualizáciu grafu zabezpečia scénografické prostriedky. Jedná sa o
 nástroje priamo určené na tvorbu 3D grafiky, ktoré často poskytujú
@@ -211,10 +222,16 @@ v kombinácii myši a klávesnice. Pomocou myši je tiež riešená interakcia
 používateľa s grafom - po kliknutí na zvolený uzol nad ním je možné
 vykonávať ďalšie operácie.
 
+.. figure:: images/product-summary/graph-visualization.png
+    :scale: 50%
+    :alt: 3D vizualizovanie grafu
+    :align: center
+
+
 Zobrazenie grafu modulov cez metaforu mesta
 ===========================================
 
-Zdroj: Diplomová práca Denis IlLés 2016/2017
+*Zdroj: Diplomová práca Denis IlLés 2016/2017*
 
 Metafory pretransformujú abstraktnú problematiku softvéru do inej,
 používateľovi prijateľnejšej oblasti a uľahčujú nám pochopenie
@@ -228,7 +245,11 @@ Pri metafore sa uzly modulov znázorňujú ako hierarchické štruktúry
 poskladané z regiónov, budov a gúľ. Vytvorenie metafory mesta je možné
 pre jazyky Java a Lua.
 
-//obr
+.. figure:: images/product-summary/city-metaphor.png
+    :scale: 50%
+    :alt: Mesto testovacieho súboru
+    :align: center
+
 
 Vizualizácia Moonscript grafu
 =============================
@@ -278,7 +299,7 @@ projektu v jazyku Lua.
 Výsledný graf je vytvorený tak, že sa najprv vytvorí strom súborovej
 štruktúry začínajúci v danom adresári. Pritom sú brané do úvahy len
 súbory a adresáre a sú ignorované skryté súbory. Súbory, ktoré majú
-príponu “.lua” sú považované za zdrojové kódy jazyka Lua a sú ďalej
+príponu ".lua" sú považované za zdrojové kódy jazyka Lua a sú ďalej
 analyzované. Pre každý takýto súbor sú vytvorené vrcholy pre všetky
 funkcie, ktoré sú v danom súbore definované a sú spojené hranou s
 vrcholom zodpovedajúcim zdrojovému súboru. V týchto vrcholoch
@@ -317,6 +338,12 @@ obsahuje nasledujúce formy interakcie zhlukovania:
 -  škálovanie obmedzovačov
 
 -  zmena odpudivých síl uzlov vo vnútri zhlukov
+   
+.. figure:: images/product-summary/clustering-use-case.png
+    :scale: 50%
+    :alt: Pripady pouzitia zhlukovanie
+    :align: center
+   
 
 Zobrazenie vnoreného webového prehliadača
 =========================================
@@ -348,6 +375,7 @@ metrikách vyznačených uzlov. Má nasledujúce možnosti:
 
 -  Umožniť filtráciu dát zobrazených vo webovom prehliadači
 
-.. |image0| image:: media/image1.png
-   :width: 5.20833in
-   :height: 2.10756in
+.. figure:: images/product-summary/webview.png
+    :scale: 50%
+    :alt: Vnoreny webovy prehliadac
+    :align: center
