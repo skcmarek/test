@@ -1,3 +1,48 @@
+Architektúra systému 
+
+*Core –* obsahuje jadro systému, inicializuje základné časti systému.
+*Data -* dátový modul pre opis štruktúry grafu, obsahujúci triedy reprezentujúce jednotlivé
+prvky grafu (graph, node, edge, type, layout, ...).
+*Importer -* modul pre parsovanie vstupných súborov vo formátoch GraphML, RSF a GXL.
+*Layout –* modul, ktorý má na starosti rozmiestňovanie uzlov v 3D priestore, taktiež obsahuje
+implementácie layout algoritmu a triedy pre pridávanie ohraničení rozmiestnenia.
+*Manager -* modul pre prácu s grafom.
+*Math -* model pre rozšírenie práce s kamerou.
+*Model –* modul pre komunikáciu systému s databázou. Funkcionalitou je mapovanie
+objektov do databázy, vytvorenie spojenia s databázou a základne funkcie výberu a uloženia
+grafu. Taktiež umožňuje uloženie uzlov aj s ich atribútmi a viacero rozmiestnení pre 1 graf.
+*Network -* modul pre podporu kolaboratívnej práce nad grafom. Poskytuje klient/server
+funkcionalitu.
+*Noise -* modul pre vytvorenie generovaného 3D priestoru pre pozadie.
+*OsgBrowser -* modul zahŕňa viazanie udalostí pre jednotlivé klávesy a akcie myši medzi
+rozhraniami Qt a OpenSceneGraph a vizualizáciu načítaných grafov.
+*QOSG –* modul pre prácu s grafickými prvkami softvéru. Má na starosti vytvorenie hlavného
+okna a prácu s pomocnými oknami a widgetami.
+*Util -* zabezpečuje konfiguráciu nastavení aplikácie a funkcie pre vyčistenie pamäte.
+*Viewer -* modul zabezpečuje pohyb v 3D priestore a prácu s kamerou. V module sa tiež
+pripravuje graf a jeho pre zobrazenie a vytvorenie 3D kocky pre pozadie.
+*Kinect –* modul pre komunikáciu a ovládanie zariadenia Kinect. Medzi jeho funkcionalitu
+patrí získavanie informácií a ich nasledovné spracovanie. Obsahuje detegovanie gest, ktoré
+nahrádzajú ovládanie myšou, otáčanie a pohyb grafu a gestá pre ďalšie ovládanie.
+*Speech -* implementuje funkcionalitu rozpoznávania hlasu.
+*OpenCV -* zabezpečuje rozpoznávanie tváre na obraze z kamery a poskytuje funkcionalitu pre
+správu kamier.
+*QOpenCV –* obsahuje okno pre ovládanie rozpoznávania tváre, značky a ovládanie video
+pozadia.
+*Aruco –* obsahuje funkcionalitu, ktorá vie rozpoznávať značky z kamery použitím knižnice
+Aruco.
+*5DTGloves –* zabezpečuje detegovanie gesta ruky a vykonávanie korešpondujúcich akcií.
+*Leap senzor –* deteguje dve ruky používateľa v 3D priestore a sleduje pohyby rúk až na
+úroveň článkov prstov.
+*3D myš –* poskytuje ovládanie kamery pomocou tohto zariadenia.
+
+.. figure:: images/product-summary/architecture.png
+    :scale: 30%
+    :alt: Vuzix okuliare
+    :align: center
+
+
+
 .. contents::
 
 Zobrazenie cez stereoskopické okuliare
