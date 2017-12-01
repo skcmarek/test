@@ -71,7 +71,7 @@ Prípady použitia
 .. contents::
 
 Zobrazenie cez stereoskopické okuliare
-======================================
+--------------------------------------
 
 *Zdroj: Tímový projekt č. 18 2016/2017*
 
@@ -124,7 +124,7 @@ existujúcim riešením pre AR okuliare v triede
 
 
 Zobrazenie pomocou viacerých monitorov
-======================================
+--------------------------------------
 
 *Zdroj: Tímový projekt č. 18 2016/2017*
 
@@ -144,7 +144,7 @@ na tomto obrázku (pre 3 kamery):
 
 
 Manipulácia s grafom v priestore cez Leap senzor
-================================================
+------------------------------------------------
 
 *Zdroj: Tímový projekt č. 9 2014/2015*
 
@@ -195,7 +195,7 @@ Rozšírená funkcionalita aplikácie vďaka zakomponovaniu Leap senzora:
 
 
 Uloženie a načítanie dát z databázy
-===================================
+-----------------------------------
 
 *Zdroj: Tímový projekt č. 20 2009/2010*
 
@@ -217,7 +217,7 @@ grafe (počet uzlov, počet hrán, početnosť typov hrán, atď.)
 Pre potreby projektu je použitý databázový server PostgreSQL.
 
 Ovládanie cez používateľské rozhranie
-=====================================
+-------------------------------------
 
 *Zdroj: Tímový projekt č. 20 2009/2010*
 
@@ -254,7 +254,7 @@ v Qt uspôsobených na tento účel.
 
 
 3D Vizualizovanie grafu
-=======================
+-----------------------
 
 *Zdroj: Tímový projekt č. 20 2009/2010*
 
@@ -299,7 +299,7 @@ vykonávať ďalšie operácie.
 
 
 Zobrazenie grafu modulov cez metaforu mesta
-===========================================
+-------------------------------------------
 
 *Zdroj: Diplomová práca Denis IlLés 2016/2017*
 
@@ -322,7 +322,7 @@ pre jazyky Java a Lua.
 
 
 Vizualizácia Moonscript grafu
-=============================
+-----------------------------
 
 Zdroj: Diplomová práca Denis IlLés 2016/2017, Diplomová práca Štefan
 Horváth 2015/2016
@@ -335,7 +335,7 @@ reprezentácie. Špeciálnou črtou tohto typu grafu je možnosť znázornenia
 grafu tried kliknutím sa konkrétny uzol vo vizualizovanom grafe.
 
 Zobrazenie evolúcie softvéru cez graf
-=====================================
+-------------------------------------
 
 Zdroj: Diplomová práca Michael Garaj 2015/2016
 
@@ -358,7 +358,7 @@ posuvnej lišty presunúť na nami zvolenú verziu. Modul taktiež poskytuje
 zobrazenie zmien vykonaných v súbore voči predchádzajúcej verzii.
 
 Vizualizovanie vlastností systému prostredníctvom metrík
-========================================================
+--------------------------------------------------------
 
 Zdroj: Diplomová práca František Nagy 2013/2014
 
@@ -380,7 +380,7 @@ hrana z vrcholu reprezentujúceho funkciu A do vrcholu reprezentujúceho
 funkciu B.
 
 Zhlukovanie grafu
-=================
+-----------------
 
 Zdroj: Diplomová práca Andrej Britvík 2013/2014
 
@@ -416,7 +416,7 @@ obsahuje nasledujúce formy interakcie zhlukovania:
    
 
 Zobrazenie vnoreného webového prehliadača
-=========================================
+-----------------------------------------
 
 Zdroj: Diplomová práca Michael Gloger 2014/2015
 
